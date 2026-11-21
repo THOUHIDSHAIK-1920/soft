@@ -1,0 +1,143 @@
+[
+  {
+    "runId": "run-1795017878873",
+    "timestamp": "2026-11-18T16:04:38.873Z",
+    "mode": "normal",
+    "locatorChange": false,
+    "bugInjection": false,
+    "totalTests": 21,
+    "passed": 21,
+    "failed": 0,
+    "durationMs": 11549,
+    "healingAttempts": 0,
+    "healingSuccesses": 0,
+    "healingSuccessRate": 1,
+    "detectedBugs": [],
+    "moduleStats": [
+      {
+        "module": "Login",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "MovieList",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "MovieDetails",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "Showtime",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "SeatMap",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "Payment",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "Confirmation",
+        "failure_count": 0,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 0
+      }
+    ]
+  },
+  {
+    "runId": "run-1795017980576",
+    "timestamp": "2026-11-18T16:06:20.576Z",
+    "mode": "locator-change+bugs",
+    "locatorChange": true,
+    "bugInjection": true,
+    "totalTests": 21,
+    "passed": 4,
+    "failed": 17,
+    "durationMs": 81317,
+    "healingAttempts": 184,
+    "healingSuccesses": 184,
+    "healingSuccessRate": 1,
+    "detectedBugs": [
+      "BUG-01",
+      "BUG-02",
+      "BUG-03",
+      "BUG-04",
+      "BUG-05",
+      "BUG-06",
+      "BUG-07",
+      "BUG-08"
+    ],
+    "moduleStats": [
+      {
+        "module": "Login",
+        "failure_count": 2,
+        "healing_count": 63,
+        "flakiness": 0,
+        "has_bug": 1
+      },
+      {
+        "module": "MovieList",
+        "failure_count": 3,
+        "healing_count": 24,
+        "flakiness": 0,
+        "has_bug": 1
+      },
+      {
+        "module": "MovieDetails",
+        "failure_count": 0,
+        "healing_count": 17,
+        "flakiness": 0,
+        "has_bug": 0
+      },
+      {
+        "module": "Showtime",
+        "failure_count": 2,
+        "healing_count": 13,
+        "flakiness": 0,
+        "has_bug": 1
+      },
+      {
+        "module": "SeatMap",
+        "failure_count": 6,
+        "healing_count": 52,
+        "flakiness": 0,
+        "has_bug": 1
+      },
+      {
+        "module": "Payment",
+        "failure_count": 2,
+        "healing_count": 15,
+        "flakiness": 0,
+        "has_bug": 1
+      },
+      {
+        "module": "Confirmation",
+        "failure_count": 2,
+        "healing_count": 0,
+        "flakiness": 0,
+        "has_bug": 1
+      }
+    ]
+  }
+]

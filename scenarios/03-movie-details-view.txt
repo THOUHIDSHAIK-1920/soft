@@ -1,0 +1,6 @@
+Scenario: Movie Details Inspection
+Module: MovieDetails
+Tags: @smoke @regression
+
+From the movie list, the user clicks View Details on "Interstellar Odyssey".
+The Movie Details page should display the movie title, genre, synopsis, director, cast, ticket price ($14.00), and a Select Showtime button to proceed to showtime selection.

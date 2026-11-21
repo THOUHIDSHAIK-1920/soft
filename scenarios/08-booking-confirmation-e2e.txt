@@ -1,0 +1,6 @@
+Scenario: Complete End-to-End Movie Ticket Booking Confirmation
+Module: Confirmation
+Tags: @smoke @regression
+
+A logged-in user (alice@cinebook.com) selects "Interstellar Odyssey", picks showtime ST-101, selects available seats F1 and F2 ($28.00 total), enters valid mock payment card details (Alice Johnson, 4111111111111111, 12/28, 123), and clicks Pay Now.
+The Booking Confirmation page must display the Booking Confirmed banner, a valid booking reference starting with "CB-", and the exact paid total of $28.00.

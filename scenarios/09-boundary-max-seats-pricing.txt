@@ -1,0 +1,5 @@
+Scenario: Boundary Validation for Exact 6-Seat Maximum Order
+Module: SeatMap
+Tags: @regression
+
+On the Seat Map page for Quantum Horizon (ST-201, $12.00 per ticket), selecting exactly 6 available seats (G1, G2, G3, G4, G5, G6) is permitted as the upper boundary, updates selected count to 6, calculates total price as $72.00, and enables Proceed to Payment.

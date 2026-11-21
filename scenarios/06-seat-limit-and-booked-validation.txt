@@ -1,0 +1,7 @@
+Scenario: Booked Seat Protection and Maximum Seat Limit Enforcement
+Module: SeatMap
+Tags: @regression
+
+On the Seat Map page for ST-101, verify two critical constraints:
+1. Pre-booked seat A1 must be disabled and cannot be toggled into selected state.
+2. Attempting to select a 7th seat after selecting 6 available seats (C1, C2, C3, D1, D2, D3) must be blocked and display the maximum 6 seats validation error.

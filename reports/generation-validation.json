@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-11-18T16:04:09.985Z",
+  "totalGenerated": 12,
+  "validGenerated": 12,
+  "testGenerationAccuracy": 1,
+  "specs": [
+    {
+      "file": "tests/generated/login.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-001",
+        "TC-GEN-002"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/movielist.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-003",
+        "TC-GEN-012"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/moviedetails.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-004"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/showtime.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-005"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-006",
+        "TC-GEN-007",
+        "TC-GEN-008",
+        "TC-GEN-011"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/payment.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-009"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    },
+    {
+      "file": "tests/generated/confirmation.generated.spec.ts",
+      "testCaseIds": [
+        "TC-GEN-010"
+      ],
+      "tscValid": true,
+      "dryRunValid": true
+    }
+  ]
+}

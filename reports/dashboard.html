@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Movie Ticket Testing Framework — Intelligence Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #111c33;
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --blue: #3b82f6;
+      --green: #10b981;
+      --amber: #f59e0b;
+      --red: #ef4444;
+      --purple: #8b5cf6;
+      --cyan: #06b6d4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 1360px; margin: 0 auto; }
+    header {
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 24px; gap: 12px;
+    }
+    h1 { font-size: 1.55rem; font-weight: 800; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 24px;
+    }
+    .kpi {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+    }
+    .kpi-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+    .kpi-val { font-size: 1.7rem; font-weight: 800; margin: 6px 0 4px; color: #fff; }
+    .kpi-note { font-size: 0.78rem; color: #cbd5e1; }
+    .charts-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; margin-bottom: 24px;
+    }
+    .panel {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px;
+    }
+    .panel h2 { font-size: 1.08rem; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; }
+    .chart-box { position: relative; height: 260px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; }
+    code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.82rem; color: #93c5fd; }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700; }
+    .pill-green { background: rgba(16,185,129,0.2); color: #34d399; }
+    .pill-red { background: rgba(239,68,68,0.2); color: #f87171; }
+    .pill-amber { background: rgba(245,158,11,0.2); color: #fbbf24; }
+    .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 0.85rem; }
+    .bar-track { flex: 1; height: 10px; background: #1e293b; border-radius: 999px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--cyan)); border-radius: 999px; }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 18px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>🎬 AI-Powered Movie Ticket Booking Test Intelligence Dashboard</h1>
+      <p class="sub">Hybrid AI (LLM + TF-IDF/Clustering Self-Healing + RandomForest Bug Predictor) &amp; Playwright Automation</p>
+    </div>
+    <div style="text-align:right;font-size:0.84rem;color:#94a3b8;">
+      <div>Generated: <strong>18/11/2026, 9:36:23 pm</strong></div>
+      <div>LLM Provider: <code>mock</code></div>
+    </div>
+  </header>
+
+  <section class="kpi-grid">
+    <div class="kpi">
+      <div class="kpi-label">Test Gen Accuracy</div>
+      <div class="kpi-val" style="color:#34d399">100.0%</div>
+      <div class="kpi-note">12/12 tsc + dry-run valid</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Defect Detection Rate</div>
+      <div class="kpi-val" style="color:#fbbf24">100.0%</div>
+      <div class="kpi-note">8/8 injected bugs caught</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Automation Coverage</div>
+      <div class="kpi-val" style="color:#60a5fa">100.0%</div>
+      <div class="kpi-note">16/16 features covered</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Execution Speedup</div>
+      <div class="kpi-val" style="color:#22d3ee">81.83x</div>
+      <div class="kpi-note">11.5s vs 945s manual</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Bug Prediction Acc.</div>
+      <div class="kpi-val" style="color:#a78bfa">91.8%</div>
+      <div class="kpi-note">RandomForest (48 samples)</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Workflow Pass Rate</div>
+      <div class="kpi-val" style="color:#34d399">100.0%</div>
+      <div class="kpi-note">Normal baseline (21/21)</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Locator Healing Rate</div>
+      <div class="kpi-val" style="color:#38bdf8">100.0%</div>
+      <div class="kpi-note">184/184 broken locators healed</div>
+    </div>
+  </section>
+
+  <section class="charts-grid">
+    <div class="panel">
+      <h2>Pass / Fail Comparison (Normal vs Locator-Change + Bugs)</h2>
+      <div class="chart-box"><canvas id="passFailChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Framework Metrics Radar / Benchmark (%)</h2>
+      <div class="chart-box"><canvas id="metricsBarChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Automation Coverage by Page (%)</h2>
+      <div class="chart-box"><canvas id="coverageChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Execution Time: Automated vs Manual Baseline (sec)</h2>
+      <div class="chart-box"><canvas id="execTimeChart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="two-col">
+    <div class="panel">
+      <h2>Injected Defect Detection Matrix (8/8 Found)</h2>
+      <table>
+        <thead><tr><th>Bug ID</th><th>Module</th><th>Injected Fault</th><th>Status</th></tr></thead>
+        <tbody>
+      <tr>
+        <td><code>BUG-01</code></td>
+        <td>SeatMap</td>
+        <td>Booked seat selectable</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-02</code></td>
+        <td>SeatMap</td>
+        <td>Wrong total price (+$15 fee)</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-03</code></td>
+        <td>SeatMap</td>
+        <td>No max-6 seat limit validation</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-04</code></td>
+        <td>Confirmation</td>
+        <td>Missing confirmation &amp; booking ref</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-05</code></td>
+        <td>Login</td>
+        <td>Empty/invalid login bypass</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-06</code></td>
+        <td>MovieList</td>
+        <td>Broken movie search &amp; filter</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-07</code></td>
+        <td>Payment</td>
+        <td>Invalid credit card accepted</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    
+      <tr>
+        <td><code>BUG-08</code></td>
+        <td>Showtime</td>
+        <td>Sold-out showtime selectable</td>
+        <td><span class="pill pill-green">DETECTED</span></td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>RandomForest Bug Risk Predictions (Accuracy: 91.8%)</h2>
+      <div class="chart-box" style="height:210px;margin-bottom:14px;"><canvas id="bugPredChart"></canvas></div>
+      <table>
+        <thead><tr><th>Module</th><th>Bug Prob.</th><th>Risk</th><th>Failures</th><th>Heals</th><th>Flaky</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><strong>Login</strong></td>
+          <td>96.7%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>2</td>
+          <td>63</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>MovieList</strong></td>
+          <td>95.0%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>3</td>
+          <td>24</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>Showtime</strong></td>
+          <td>95.0%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>2</td>
+          <td>13</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>SeatMap</strong></td>
+          <td>95.0%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>6</td>
+          <td>52</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>Payment</strong></td>
+          <td>92.5%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>2</td>
+          <td>15</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>Confirmation</strong></td>
+          <td>77.3%</td>
+          <td><span class="pill pill-red">HIGH</span></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0.0%</td>
+        </tr>
+        <tr>
+          <td><strong>MovieDetails</strong></td>
+          <td>12.7%</td>
+          <td><span class="pill pill-green">LOW</span></td>
+          <td>0</td>
+          <td>17</td>
+          <td>0.0%</td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>AI Root-Cause Analysis (RCA) — 17 Analyzed Failures</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>Failed Test</th><th>Module</th><th>Category</th><th>Bug ID</th><th>Root Cause</th><th>Suggested Fix</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><strong>[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression</strong></td>
+          <td>MovieList</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-06</code></td>
+          <td>Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).</td>
+          <td>Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression</strong></td>
+          <td>MovieList</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-06</code></td>
+          <td>Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).</td>
+          <td>Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-002] Reject invalid or empty login credentials with error message @regression</strong></td>
+          <td>Login</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-05</code></td>
+          <td>Authentication endpoint bypassed credential validation for invalid/empty login input (Injected Defect BUG-05: empty_login_bypass).</td>
+          <td>Reject missing or non-matching credentials in POST /api/auth/login with HTTP 400/401 and display login-error alert.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression</strong></td>
+          <td>Confirmation</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-04</code></td>
+          <td>Booking confirmation page omitted the confirmation banner and CB-* reservation reference ID (Injected Defect BUG-04: missing_confirmation).</td>
+          <td>Return generated bookingRef from POST /api/bookings and always render confirmationBanner &amp; bookingRef in renderConfirmation().</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-02</code></td>
+          <td>Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).</td>
+          <td>Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-01</code></td>
+          <td>Pre-booked seat button remained interactive and allowed selection instead of staying disabled (Injected Defect BUG-01: booked_seat_selectable).</td>
+          <td>Set disabled attribute on booked seats and reject clicks on originallyBooked seats in renderSeatMap().</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression</strong></td>
+          <td>Payment</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-07</code></td>
+          <td>Payment API accepted malformed card number (&quot;1234&quot; / &quot;9999&quot;) and CVV without returning validation error (Injected Defect BUG-07: invalid_card_accepted).</td>
+          <td>Enforce 16-digit PAN, MM/YY expiry, and 3-digit CVV regex validation in POST /api/bookings.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression</strong></td>
+          <td>Confirmation</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-02</code></td>
+          <td>Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).</td>
+          <td>Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression</strong></td>
+          <td>Showtime</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-08</code></td>
+          <td>Sold-out showtime ST-103 button was rendered enabled instead of disabled (Injected Defect BUG-08: showtime_soldout_selectable).</td>
+          <td>Enforce disabled attribute and server-side guard on showtimes where sold_out === 1 in sut/public/app.js.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-02</code></td>
+          <td>Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).</td>
+          <td>Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.</td>
+        </tr>
+        <tr>
+          <td><strong>[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-03</code></td>
+          <td>Seat map failed to enforce the 6-seat maximum booking constraint and permitted selecting a 7th seat (Injected Defect BUG-03: no_seat_limit_validation).</td>
+          <td>Restore selectedSeats.length &gt;= 6 check in seat click handler and POST /api/bookings validation.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Search filters movies by title [BUG-06] @regression</strong></td>
+          <td>MovieList</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-06</code></td>
+          <td>Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).</td>
+          <td>Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Sold-out showtime is disabled [BUG-08] @regression</strong></td>
+          <td>Showtime</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-08</code></td>
+          <td>Sold-out showtime ST-103 button was rendered enabled instead of disabled (Injected Defect BUG-08: showtime_soldout_selectable).</td>
+          <td>Enforce disabled attribute and server-side guard on showtimes where sold_out === 1 in sut/public/app.js.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-03</code></td>
+          <td>Seat map failed to enforce the 6-seat maximum booking constraint and permitted selecting a 7th seat (Injected Defect BUG-03: no_seat_limit_validation).</td>
+          <td>Restore selectedSeats.length &gt;= 6 check in seat click handler and POST /api/bookings validation.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Payment rejects invalid credit card number [BUG-07] @regression</strong></td>
+          <td>Payment</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-07</code></td>
+          <td>Payment API accepted malformed card number (&quot;1234&quot; / &quot;9999&quot;) and CVV without returning validation error (Injected Defect BUG-07: invalid_card_accepted).</td>
+          <td>Enforce 16-digit PAN, MM/YY expiry, and 3-digit CVV regex validation in POST /api/bookings.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Empty and invalid credentials show error message [BUG-05] @regression</strong></td>
+          <td>Login</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-05</code></td>
+          <td>Authentication endpoint bypassed credential validation for invalid/empty login input (Injected Defect BUG-05: empty_login_bypass).</td>
+          <td>Reject missing or non-matching credentials in POST /api/auth/login with HTTP 400/401 and display login-error alert.</td>
+        </tr>
+        <tr>
+          <td><strong>Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression</strong></td>
+          <td>SeatMap</td>
+          <td><span class="pill pill-amber">app bug</span></td>
+          <td><code>BUG-01</code></td>
+          <td>Pre-booked seat button remained interactive and allowed selection instead of staying disabled (Injected Defect BUG-01: booked_seat_selectable).</td>
+          <td>Set disabled attribute on booked seats and reject clicks on originallyBooked seats in renderSeatMap().</td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Self-Healing Locator Log (184/184 Succeeded)</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>Page</th><th>Broken Locator</th><th>Healed Locator</th><th>Similarity</th><th>Method</th><th>Outcome</th></tr></thead>
+        <tbody>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>#view-movie-1</code></td>
+          <td><code>#inspect-film-1-v2</code></td>
+          <td>95.6%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>#view-movie-1</code></td>
+          <td><code>#inspect-film-1-v2</code></td>
+          <td>95.6%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>.movie-card</code></td>
+          <td><code>article.film-tile-v2</code></td>
+          <td>95.4%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieDetails</td>
+          <td><code>#movie-details-title</code></td>
+          <td><code>#film-overview-heading-v2</code></td>
+          <td>94.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieDetails</td>
+          <td><code>#select-showtime-btn</code></td>
+          <td><code>#choose-screening-cta-v2</code></td>
+          <td>86.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieDetails</td>
+          <td><code>#movie-details-synopsis</code></td>
+          <td><code>#film-plot-summary-v2</code></td>
+          <td>96.7%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Showtime</td>
+          <td><code>#select-showtime-ST-101</code></td>
+          <td><code>#pick-screening-ST-101-v2</code></td>
+          <td>96.4%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieDetails</td>
+          <td><code>#select-showtime-btn</code></td>
+          <td><code>#choose-screening-cta-v2</code></td>
+          <td>86.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>SeatMap</td>
+          <td><code>#seat-F1</code></td>
+          <td><code>#grid-cell-F1-v2</code></td>
+          <td>93.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>SeatMap</td>
+          <td><code>#seat-F2</code></td>
+          <td><code>#grid-cell-F2-v2</code></td>
+          <td>93.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>#search-movies-input</code></td>
+          <td><code>#catalog-query-box-v2</code></td>
+          <td>94.0%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>#search-movies-btn</code></td>
+          <td><code>#catalog-search-trigger-v2</code></td>
+          <td>91.3%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-password</code></td>
+          <td><code>#auth-secret-field-v2</code></td>
+          <td>89.9%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>SeatMap</td>
+          <td><code>#proceed-to-payment-btn</code></td>
+          <td><code>#checkout-continue-action-v2</code></td>
+          <td>88.0%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-submit</code></td>
+          <td><code>#signin-primary-cta-v2</code></td>
+          <td>91.1%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Payment</td>
+          <td><code>#card-holder-input</code></td>
+          <td><code>#billing-name-field-v2</code></td>
+          <td>90.0%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>.movie-card</code></td>
+          <td><code>article.film-tile-v2</code></td>
+          <td>95.4%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Payment</td>
+          <td><code>#card-number-input</code></td>
+          <td><code>#billing-pan-field-v2</code></td>
+          <td>92.5%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>#genre-filter-select</code></td>
+          <td><code>#catalog-category-select-v2</code></td>
+          <td>95.3%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Payment</td>
+          <td><code>#card-expiry-input</code></td>
+          <td><code>#billing-exp-field-v2</code></td>
+          <td>92.0%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>MovieList</td>
+          <td><code>.movie-card</code></td>
+          <td><code>article.film-tile-v2</code></td>
+          <td>95.4%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Payment</td>
+          <td><code>#card-cvv-input</code></td>
+          <td><code>#billing-cvc-field-v2</code></td>
+          <td>90.0%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><code>#login-email</code></td>
+          <td><code>#auth-email-field-v2</code></td>
+          <td>89.8%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr>
+        <tr>
+          <td>Payment</td>
+          <td><code>#pay-now-btn</code></td>
+          <td><code>#complete-purchase-cta-v2</code></td>
+          <td>80.2%</td>
+          <td>tfidf-cosine+agglomerative</td>
+          <td><span class="pill pill-green">HEALED</span></td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Execution Run History</h2>
+    <table>
+      <thead><tr><th>Run ID</th><th>Mode</th><th>Passed</th><th>Failed</th><th>Duration</th><th>Healing</th><th>Bugs Found</th></tr></thead>
+      <tbody>
+      <tr>
+        <td><code>run-1795017878873</code></td>
+        <td>normal</td>
+        <td>21 / 21</td>
+        <td>0</td>
+        <td>11.55s</td>
+        <td>0/0 (100.0%)</td>
+        <td>0/8</td>
+      </tr>
+      <tr>
+        <td><code>run-1795017980576</code></td>
+        <td>locator-change+bugs</td>
+        <td>4 / 21</td>
+        <td>17</td>
+        <td>81.32s</td>
+        <td>184/184 (100.0%)</td>
+        <td>8/8</td>
+      </tr></tbody>
+    </table>
+  </section>
+</div>
+
+<script>
+  const chartTextColor = '#cbd5e1';
+  const gridColor = 'rgba(148, 163, 184, 0.14)';
+
+  if (typeof Chart !== 'undefined') {
+    Chart.defaults.color = chartTextColor;
+
+    new Chart(document.getElementById('passFailChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Normal Mode (Clean SUT)', 'Locator-Change + 8 Bugs'],
+        datasets: [
+          { label: 'Passed', data: [21, 4], backgroundColor: '#10b981' },
+          { label: 'Failed (Defects Caught)', data: [0, 17], backgroundColor: '#ef4444' }
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, grid: { color: gridColor } } } }
+    });
+
+    new Chart(document.getElementById('metricsBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Test Gen Acc.', 'Defect Detect', 'Coverage', 'Bug Pred Acc.', 'Workflow Pass', 'Healing Rate'],
+        datasets: [{
+          label: 'Score (%)',
+          data: [
+            100.0,
+            100.0,
+            100.0,
+            91.8,
+            100.0,
+            100.0
+          ],
+          backgroundColor: ['#34d399', '#fbbf24', '#60a5fa', '#a78bfa', '#10b981', '#38bdf8']
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100, grid: { color: gridColor } } }, plugins: { legend: { display: false } } }
+    });
+
+    new Chart(document.getElementById('coverageChart'), {
+      type: 'bar',
+      data: {
+        labels: ["Login","MovieList","MovieDetails","Showtime","SeatMap","Payment","Confirmation"],
+        datasets: [{ label: 'Feature Coverage %', data: [100,100,100,100,100,100,100], backgroundColor: '#3b82f6' }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100, grid: { color: gridColor } } }, plugins: { legend: { display: false } } }
+    });
+
+    new Chart(document.getElementById('execTimeChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Automated Parallel Suite', 'Manual QA Baseline'],
+        datasets: [{
+          label: 'Execution Time (seconds)',
+          data: [11.55, 945.00],
+          backgroundColor: ['#06b6d4', '#64748b']
+        }]
+      },
+      options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, scales: { x: { beginAtZero: true, grid: { color: gridColor } } }, plugins: { legend: { display: false } } }
+    });
+
+    new Chart(document.getElementById('bugPredChart'), {
+      type: 'bar',
+      data: {
+        labels: ["Login","MovieList","Showtime","SeatMap","Payment","Confirmation","MovieDetails"],
+        datasets: [{
+          label: 'Predicted Defect Probability (%)',
+          data: [97,95,95,95,93,77,13],
+          backgroundColor: ["#ef4444","#ef4444","#ef4444","#ef4444","#ef4444","#ef4444","#10b981"]
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, max: 100, grid: { color: gridColor } } }, plugins: { legend: { display: false } } }
+    });
+  }
+</script>
+</body>
+</html>

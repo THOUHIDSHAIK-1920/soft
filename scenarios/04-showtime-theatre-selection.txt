@@ -1,0 +1,6 @@
+Scenario: Showtime and Theatre Selection with Sold-Out Validation
+Module: Showtime
+Tags: @regression
+
+On the Showtime Selection page for "Interstellar Odyssey", multiple theatres and screening times are listed, including an available IMAX screening (ST-101) and a Sold Out screening (ST-103).
+The Sold Out showtime button must be disabled and non-selectable, while clicking Choose Seats on the available showtime navigates to the 10x10 seat map.

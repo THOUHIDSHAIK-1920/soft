@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-11-18T16:04:11.665Z",
+  "totalFeatures": 16,
+  "coveredFeatures": 16,
+  "automationCoverage": 1,
+  "pages": [
+    {
+      "page": "Login",
+      "features": [
+        {
+          "name": "Valid User Authentication",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts",
+            "tests/generated/login.generated.spec.ts",
+            "tests/generated/moviedetails.generated.spec.ts",
+            "tests/generated/movielist.generated.spec.ts",
+            "tests/generated/payment.generated.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts",
+            "tests/generated/showtime.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Invalid/Empty Credential Rejection",
+          "covered": true,
+          "tests": [
+            "tests/manual/login.manual.spec.ts",
+            "tests/generated/login.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "MovieList",
+      "features": [
+        {
+          "name": "Movie Catalog Listing",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/login.manual.spec.ts",
+            "tests/generated/login.generated.spec.ts",
+            "tests/generated/movielist.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Movie Title Search Filtering",
+          "covered": true,
+          "tests": [
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/generated/movielist.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Genre Filter & Catalog Roundtrip",
+          "covered": true,
+          "tests": [
+            "tests/generated/movielist.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "MovieDetails",
+      "features": [
+        {
+          "name": "Movie Metadata & Synopsis Display",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/generated/moviedetails.generated.spec.ts",
+            "tests/generated/movielist.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Showtime Navigation CTA",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts",
+            "tests/generated/moviedetails.generated.spec.ts",
+            "tests/generated/payment.generated.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts",
+            "tests/generated/showtime.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Showtime",
+      "features": [
+        {
+          "name": "Available Theatre & Screening Selection",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts",
+            "tests/generated/payment.generated.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts",
+            "tests/generated/showtime.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Sold-Out Showtime Protection",
+          "covered": true,
+          "tests": [
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts",
+            "tests/generated/showtime.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "SeatMap",
+      "features": [
+        {
+          "name": "10x10 Seat Grid Visual & DOM Verification",
+          "covered": true,
+          "tests": [
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Dynamic Seat Selection & Pricing",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Booked Seat Unselectable Guard",
+          "covered": true,
+          "tests": [
+            "tests/manual/seat-map-visual.manual.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Max 6 Seats Limit & Boundary Enforcement",
+          "covered": true,
+          "tests": [
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/generated/seatmap.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Payment",
+      "features": [
+        {
+          "name": "Valid Mock Card Checkout",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts"
+          ]
+        },
+        {
+          "name": "Invalid Card / CVV Validation",
+          "covered": true,
+          "tests": [
+            "tests/manual/bug-detection.manual.spec.ts",
+            "tests/generated/payment.generated.spec.ts"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Confirmation",
+      "features": [
+        {
+          "name": "Booking Reference & Receipt Display",
+          "covered": true,
+          "tests": [
+            "tests/manual/booking-e2e.manual.spec.ts",
+            "tests/generated/confirmation.generated.spec.ts"
+          ]
+        }
+      ]
+    }
+  ]
+}

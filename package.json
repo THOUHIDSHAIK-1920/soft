@@ -1,0 +1,31 @@
+{
+  "name": "movie-ticket-ai-testing-framework",
+  "version": "1.0.0",
+  "description": "AI-Powered Intelligent Software Testing Framework for Movie Ticket Booking Applications Using Hybrid AI and Playwright Automation",
+  "private": true,
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start:sut": "node scripts/start-sut.mjs",
+    "start:ai": "node scripts/start-ai.mjs",
+    "generate": "npx tsx src/ai/testCaseGenerator.ts && npx tsx src/ai/scriptGenerator.ts && npx tsx src/ai/coverageMapper.ts",
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:manual": "npx playwright test tests/manual",
+    "test:generated": "npx playwright test tests/generated",
+    "report": "npx tsx scripts/run-report.ts",
+    "run:all": "node scripts/run-pipeline.mjs",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

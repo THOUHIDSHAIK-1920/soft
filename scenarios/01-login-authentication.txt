@@ -1,0 +1,6 @@
+Scenario: User Login Authentication
+Module: Login
+Tags: @smoke @regression
+
+As a registered moviegoer, I want to sign in to CineBook Pro using my valid email (alice@cinebook.com) and password (Cinema@123) so that I can browse now-showing movies and book tickets.
+Also verify that submitting invalid or empty credentials displays an authentication error message and prevents unauthorized login.

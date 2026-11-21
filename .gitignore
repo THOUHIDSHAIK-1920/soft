@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+ai-service/.venv/
+ai-service/__pycache__/
+sut/cinema.db
+sut/cinema.db-journal
+test-results/
+playwright-report/
+blob-report/
+reports/.healing-events.jsonl
+reports/.snapshots-*.json
+*.log

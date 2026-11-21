@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineBook Pro — Movie Ticket Booking</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <div class="brand" id="brand-logo">
+        <span class="brand-icon">🎬</span>
+        <span class="brand-name">CineBook Pro</span>
+      </div>
+      <nav class="topbar-nav" aria-label="Primary Navigation">
+        <span id="mode-badges" class="mode-badges"></span>
+        <span id="user-greeting" class="user-greeting hidden"></span>
+        <button id="nav-movies-btn" data-testid="nav-movies-btn" class="btn btn-ghost hidden" type="button" aria-label="Browse Movies">Movies</button>
+        <button id="nav-logout-btn" data-testid="nav-logout-btn" class="btn btn-outline hidden" type="button" aria-label="Sign Out">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app-root" class="container" role="main">
+    <div class="loading-state">Loading CineBook Pro...</div>
+  </main>
+
+  <footer class="footer">
+    <p>CineBook Pro Demo System Under Test &bull; SQLite + Express &bull; Hybrid AI Playwright Testing Framework</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

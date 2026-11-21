@@ -1,0 +1,1695 @@
+{
+  "SeatMap::seat_J1": {
+    "tag": "button",
+    "id": "seat-J1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "J1",
+    "attributes": {
+      "data-testid": "seat-J1",
+      "type": "button",
+      "data-seat": "J1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat J1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-J1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_J2": {
+    "tag": "button",
+    "id": "seat-J2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "J2",
+    "attributes": {
+      "data-testid": "seat-J2",
+      "type": "button",
+      "data-seat": "J2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat J2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-J2",
+    "pageContext": "seats"
+  },
+  "SeatMap::allSeats": {
+    "tag": "button",
+    "id": "seat-A1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "A1",
+    "attributes": {
+      "data-testid": "seat-A1",
+      "type": "button",
+      "data-seat": "A1",
+      "data-status": "booked",
+      "data-originally-booked": "true",
+      "aria-label": "Seat A1 booked",
+      "disabled": ""
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6",
+      "button:A7"
+    ],
+    "selector": ".seat-btn",
+    "pageContext": "seats"
+  },
+  "Login::emailInput": {
+    "tag": "input",
+    "id": "login-email",
+    "classes": [
+      "input",
+      "login-email-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "login-email",
+      "type": "email",
+      "name": "email",
+      "placeholder": "alice@cinebook.com",
+      "aria-label": "Email Address",
+      "autocomplete": "username"
+    },
+    "parentPath": "body > main > section > form > div",
+    "siblings": [
+      "label:Email Address"
+    ],
+    "selector": "#login-email",
+    "pageContext": "login"
+  },
+  "Login::passwordInput": {
+    "tag": "input",
+    "id": "login-password",
+    "classes": [
+      "input",
+      "login-password-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "login-password",
+      "type": "password",
+      "name": "password",
+      "placeholder": "Enter your password",
+      "aria-label": "Password",
+      "autocomplete": "current-password"
+    },
+    "parentPath": "body > main > section > form > div",
+    "siblings": [
+      "label:Password"
+    ],
+    "selector": "#login-password",
+    "pageContext": "login"
+  },
+  "Login::submitButton": {
+    "tag": "button",
+    "id": "login-submit",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "btn-block",
+      "login-submit-btn"
+    ],
+    "text": "Sign In",
+    "attributes": {
+      "data-testid": "login-submit",
+      "type": "submit",
+      "aria-label": "Sign In"
+    },
+    "parentPath": "body > main > section > form",
+    "siblings": [
+      "div:Email Address",
+      "div:Password"
+    ],
+    "selector": "#login-submit",
+    "pageContext": "login"
+  },
+  "MovieList::movieCard": {
+    "tag": "article",
+    "id": "",
+    "classes": [
+      "movie-card"
+    ],
+    "text": "Sci-Fi\n                  ★ 9.1\n                \n                \n                  Interstellar Odyssey\n                ",
+    "attributes": {
+      "data-movie-id": "1",
+      "data-movie-title": "Interstellar Odyssey"
+    },
+    "parentPath": "body > main > section > div",
+    "siblings": [
+      "article:Thriller\n                  ★ 8",
+      "article:Action\n                  ★ 8.4",
+      "article:Drama\n                  ★ 8.9\n",
+      "article:Mystery\n                  ★ 8.",
+      "article:Animation\n                  ★ "
+    ],
+    "selector": ".movie-card",
+    "pageContext": "movies"
+  },
+  "MovieList::genreSelect": {
+    "tag": "select",
+    "id": "genre-filter-select",
+    "classes": [
+      "select",
+      "genre-select"
+    ],
+    "text": "All Genres\n              Sci-Fi\n              Thriller\n              Action\n              Drama\n              Mystery\n  ",
+    "attributes": {
+      "data-testid": "genre-filter-select",
+      "aria-label": "Filter by genre"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "input:",
+      "button:Search"
+    ],
+    "selector": "#genre-filter-select",
+    "pageContext": "movies"
+  },
+  "MovieList::viewDetailsBtn_6": {
+    "tag": "button",
+    "id": "view-movie-6",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "view-details-btn"
+    ],
+    "text": "View Details",
+    "attributes": {
+      "data-testid": "view-movie-6",
+      "type": "button",
+      "data-action": "view-details",
+      "data-movie-id": "6",
+      "aria-label": "View Details for Skyward Chronicles"
+    },
+    "parentPath": "body > main > section > div > article > div",
+    "siblings": [
+      "h2:Skyward Chronicles",
+      "p:105 min • Rated G",
+      "p:$10.00 / ticket"
+    ],
+    "selector": "#view-movie-6",
+    "pageContext": "movies"
+  },
+  "MovieDetails::titleHeading": {
+    "tag": "h1",
+    "id": "movie-details-title",
+    "classes": [
+      "details-title"
+    ],
+    "text": "Interstellar Odyssey",
+    "attributes": {
+      "data-testid": "movie-details-title",
+      "aria-label": "Movie Details Title"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "span:Sci-Fi",
+      "p:148 min • Rated PG-13 • IMDb ★",
+      "p:A deep-space research crew cro",
+      "div:DirectorElena Vance",
+      "div:CastMarcus Cole, Aria Lin, Dav"
+    ],
+    "selector": "#movie-details-title",
+    "pageContext": "movie-details"
+  },
+  "MovieDetails::backToMoviesBtn": {
+    "tag": "button",
+    "id": "back-to-movies-btn",
+    "classes": [
+      "btn",
+      "btn-outline",
+      "back-movies-btn"
+    ],
+    "text": "← Back to Movies",
+    "attributes": {
+      "data-testid": "back-to-movies-btn",
+      "type": "button",
+      "aria-label": "Back to Movies"
+    },
+    "parentPath": "body > main > section > div",
+    "siblings": [],
+    "selector": "#back-to-movies-btn",
+    "pageContext": "movie-details"
+  },
+  "MovieList::viewDetailsBtn_1": {
+    "tag": "button",
+    "id": "view-movie-1",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "view-details-btn"
+    ],
+    "text": "View Details",
+    "attributes": {
+      "data-testid": "view-movie-1",
+      "type": "button",
+      "data-action": "view-details",
+      "data-movie-id": "1",
+      "aria-label": "View Details for Interstellar Odyssey"
+    },
+    "parentPath": "body > main > section > div > article > div",
+    "siblings": [
+      "h2:Interstellar Odyssey",
+      "p:148 min • Rated PG-13",
+      "p:$14.00 / ticket"
+    ],
+    "selector": "#view-movie-1",
+    "pageContext": "movies"
+  },
+  "MovieDetails::selectShowtimeBtn": {
+    "tag": "button",
+    "id": "select-showtime-btn",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "btn-block",
+      "select-showtime-btn"
+    ],
+    "text": "Select Showtime",
+    "attributes": {
+      "data-testid": "select-showtime-btn",
+      "type": "button",
+      "aria-label": "Select Showtime"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [],
+    "selector": "#select-showtime-btn",
+    "pageContext": "movie-details"
+  },
+  "Showtime::showtimeBtn_ST-101": {
+    "tag": "button",
+    "id": "select-showtime-ST-101",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "showtime-select-btn"
+    ],
+    "text": "Choose Seats",
+    "attributes": {
+      "data-testid": "select-showtime-ST-101",
+      "type": "button",
+      "data-showtime-id": "ST-101",
+      "data-sold-out": "false",
+      "aria-label": "Choose Seats for CineMax IMAX Downtown 14:30"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:CineMax IMAX Downtown\n        "
+    ],
+    "selector": "#select-showtime-ST-101",
+    "pageContext": "showtimes"
+  },
+  "SeatMap::seat_C1": {
+    "tag": "button",
+    "id": "seat-C1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "C1",
+    "attributes": {
+      "data-testid": "seat-C1",
+      "type": "button",
+      "data-seat": "C1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat C1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-C1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_C2": {
+    "tag": "button",
+    "id": "seat-C2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "C2",
+    "attributes": {
+      "data-testid": "seat-C2",
+      "type": "button",
+      "data-seat": "C2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat C2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-C2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_C3": {
+    "tag": "button",
+    "id": "seat-C3",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "C3",
+    "attributes": {
+      "data-testid": "seat-C3",
+      "type": "button",
+      "data-seat": "C3",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat C3 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-C3",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_D1": {
+    "tag": "button",
+    "id": "seat-D1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "D1",
+    "attributes": {
+      "data-testid": "seat-D1",
+      "type": "button",
+      "data-seat": "D1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat D1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-D1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_D2": {
+    "tag": "button",
+    "id": "seat-D2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "D2",
+    "attributes": {
+      "data-testid": "seat-D2",
+      "type": "button",
+      "data-seat": "D2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat D2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-D2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_D3": {
+    "tag": "button",
+    "id": "seat-D3",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "D3",
+    "attributes": {
+      "data-testid": "seat-D3",
+      "type": "button",
+      "data-seat": "D3",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat D3 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-D3",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_D4": {
+    "tag": "button",
+    "id": "seat-D4",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "D4",
+    "attributes": {
+      "data-testid": "seat-D4",
+      "type": "button",
+      "data-seat": "D4",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat D4 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-D4",
+    "pageContext": "seats"
+  },
+  "SeatMap::seatError": {
+    "tag": "div",
+    "id": "seat-error",
+    "classes": [
+      "alert",
+      "alert-error",
+      "seat-error-msg"
+    ],
+    "text": "Maximum 6 seats allowed per booking.",
+    "attributes": {
+      "data-testid": "seat-error",
+      "role": "alert"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:CINEMA SCREEN",
+      "div:Available\n               Selec",
+      "div:A1\n        \n          A2\n     "
+    ],
+    "selector": "#seat-error",
+    "pageContext": "seats"
+  },
+  "SeatMap::availableCount": {
+    "tag": "strong",
+    "id": "count-available",
+    "classes": [
+      "stat-value"
+    ],
+    "text": "80",
+    "attributes": {
+      "data-testid": "count-available",
+      "aria-label": "Available Seats Count"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [
+      "span:Available Seats"
+    ],
+    "selector": "#count-available",
+    "pageContext": "seats"
+  },
+  "SeatMap::selectedCount": {
+    "tag": "strong",
+    "id": "count-selected",
+    "classes": [
+      "stat-value"
+    ],
+    "text": "6",
+    "attributes": {
+      "data-testid": "count-selected",
+      "aria-label": "Selected Seats Count"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [
+      "span:Selected Seats"
+    ],
+    "selector": "#count-selected",
+    "pageContext": "seats"
+  },
+  "SeatMap::bookedCount": {
+    "tag": "strong",
+    "id": "count-booked",
+    "classes": [
+      "stat-value"
+    ],
+    "text": "14",
+    "attributes": {
+      "data-testid": "count-booked",
+      "aria-label": "Booked Seats Count"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [
+      "span:Booked Seats"
+    ],
+    "selector": "#count-booked",
+    "pageContext": "seats"
+  },
+  "Showtime::showtimeBtn_ST-103": {
+    "tag": "button",
+    "id": "select-showtime-ST-103",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "showtime-select-btn"
+    ],
+    "text": "Sold Out",
+    "attributes": {
+      "data-testid": "select-showtime-ST-103",
+      "type": "button",
+      "data-showtime-id": "ST-103",
+      "data-sold-out": "true",
+      "aria-label": "Sold Out for Grand Royale Cinema 21:15",
+      "disabled": ""
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:Grand Royale Cinema\n          "
+    ],
+    "selector": "#select-showtime-ST-103",
+    "pageContext": "showtimes"
+  },
+  "MovieList::viewDetailsBtn_2": {
+    "tag": "button",
+    "id": "view-movie-2",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "view-details-btn"
+    ],
+    "text": "View Details",
+    "attributes": {
+      "data-testid": "view-movie-2",
+      "type": "button",
+      "data-action": "view-details",
+      "data-movie-id": "2",
+      "aria-label": "View Details for Quantum Horizon"
+    },
+    "parentPath": "body > main > section > div > article > div",
+    "siblings": [
+      "h2:Quantum Horizon",
+      "p:126 min • Rated PG-13",
+      "p:$12.00 / ticket"
+    ],
+    "selector": "#view-movie-2",
+    "pageContext": "movies"
+  },
+  "Showtime::showtimeBtn_ST-201": {
+    "tag": "button",
+    "id": "select-showtime-ST-201",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "showtime-select-btn"
+    ],
+    "text": "Choose Seats",
+    "attributes": {
+      "data-testid": "select-showtime-ST-201",
+      "type": "button",
+      "data-showtime-id": "ST-201",
+      "data-sold-out": "false",
+      "aria-label": "Choose Seats for CineMax IMAX Downtown 15:00"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:CineMax IMAX Downtown\n        "
+    ],
+    "selector": "#select-showtime-ST-201",
+    "pageContext": "showtimes"
+  },
+  "SeatMap::seat_J5": {
+    "tag": "button",
+    "id": "seat-J5",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "J5",
+    "attributes": {
+      "data-testid": "seat-J5",
+      "type": "button",
+      "data-seat": "J5",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat J5 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-J5",
+    "pageContext": "seats"
+  },
+  "SeatMap::proceedToPaymentBtn": {
+    "tag": "button",
+    "id": "proceed-to-payment-btn",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "btn-block",
+      "proceed-payment-btn"
+    ],
+    "text": "Proceed to Payment",
+    "attributes": {
+      "data-testid": "proceed-to-payment-btn",
+      "type": "button",
+      "aria-label": "Proceed to Payment"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [],
+    "selector": "#proceed-to-payment-btn",
+    "pageContext": "seats"
+  },
+  "Payment::cardHolderInput": {
+    "tag": "input",
+    "id": "card-holder-input",
+    "classes": [
+      "input",
+      "card-holder-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "card-holder-input",
+      "type": "text",
+      "name": "cardHolder",
+      "placeholder": "Alice Johnson",
+      "aria-label": "Cardholder Name"
+    },
+    "parentPath": "body > main > section > div > div > form > div",
+    "siblings": [
+      "label:Cardholder Name"
+    ],
+    "selector": "#card-holder-input",
+    "pageContext": "payment"
+  },
+  "Payment::cardNumberInput": {
+    "tag": "input",
+    "id": "card-number-input",
+    "classes": [
+      "input",
+      "card-number-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "card-number-input",
+      "type": "text",
+      "name": "cardNumber",
+      "placeholder": "4111111111111111",
+      "aria-label": "Card Number"
+    },
+    "parentPath": "body > main > section > div > div > form > div",
+    "siblings": [
+      "label:Card Number (16 digits)"
+    ],
+    "selector": "#card-number-input",
+    "pageContext": "payment"
+  },
+  "Payment::cardExpiryInput": {
+    "tag": "input",
+    "id": "card-expiry-input",
+    "classes": [
+      "input",
+      "card-expiry-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "card-expiry-input",
+      "type": "text",
+      "name": "expiry",
+      "placeholder": "12/28",
+      "aria-label": "Expiry Date"
+    },
+    "parentPath": "body > main > section > div > div > form > div > div",
+    "siblings": [
+      "label:Expiry (MM/YY)"
+    ],
+    "selector": "#card-expiry-input",
+    "pageContext": "payment"
+  },
+  "Payment::cardCvvInput": {
+    "tag": "input",
+    "id": "card-cvv-input",
+    "classes": [
+      "input",
+      "card-cvv-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "card-cvv-input",
+      "type": "password",
+      "name": "cvv",
+      "placeholder": "123",
+      "aria-label": "CVV"
+    },
+    "parentPath": "body > main > section > div > div > form > div > div",
+    "siblings": [
+      "label:CVV (3 digits)"
+    ],
+    "selector": "#card-cvv-input",
+    "pageContext": "payment"
+  },
+  "Payment::payNowBtn": {
+    "tag": "button",
+    "id": "pay-now-btn",
+    "classes": [
+      "btn",
+      "btn-success",
+      "btn-block",
+      "pay-now-btn"
+    ],
+    "text": "Pay Now ($28.00)",
+    "attributes": {
+      "data-testid": "pay-now-btn",
+      "type": "submit",
+      "aria-label": "Pay Now"
+    },
+    "parentPath": "body > main > section > div > div > form",
+    "siblings": [
+      "div:Cardholder Name",
+      "div:Card Number (16 digits)",
+      "div:Expiry (MM/YY)\n               "
+    ],
+    "selector": "#pay-now-btn",
+    "pageContext": "payment"
+  },
+  "Payment::paymentError": {
+    "tag": "div",
+    "id": "payment-error",
+    "classes": [
+      "alert",
+      "alert-error",
+      "payment-error-msg"
+    ],
+    "text": "Card number must be 16 digits.",
+    "attributes": {
+      "data-testid": "payment-error",
+      "role": "alert"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "h2:Card Details",
+      "form:Cardholder Name\n              "
+    ],
+    "selector": "#payment-error",
+    "pageContext": "payment"
+  },
+  "Login::errorBanner": {
+    "tag": "div",
+    "id": "login-error",
+    "classes": [
+      "alert",
+      "alert-error",
+      "login-error-msg"
+    ],
+    "text": "Email and password are required.",
+    "attributes": {
+      "data-testid": "login-error",
+      "role": "alert"
+    },
+    "parentPath": "body > main > section",
+    "siblings": [
+      "h1:Sign In to CineBook Pro",
+      "p:Book IMAX, Dolby Atmos, and st",
+      "form:Email Address\n            \n   ",
+      "p:Demo account: alice@cinebook.c"
+    ],
+    "selector": "#login-error",
+    "pageContext": "login"
+  },
+  "MovieList::searchInput": {
+    "tag": "input",
+    "id": "search-movies-input",
+    "classes": [
+      "input",
+      "movie-search-input"
+    ],
+    "text": "",
+    "attributes": {
+      "data-testid": "search-movies-input",
+      "type": "search",
+      "value": "",
+      "placeholder": "Search movies by title...",
+      "aria-label": "Search movies"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "select:All Genres\n              Sci-F",
+      "button:Search"
+    ],
+    "selector": "#search-movies-input",
+    "pageContext": "movies"
+  },
+  "MovieList::searchButton": {
+    "tag": "button",
+    "id": "search-movies-btn",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "search-btn"
+    ],
+    "text": "Search",
+    "attributes": {
+      "data-testid": "search-movies-btn",
+      "type": "button",
+      "aria-label": "Search Movies"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "input:",
+      "select:All Genres\n              Sci-F"
+    ],
+    "selector": "#search-movies-btn",
+    "pageContext": "movies"
+  },
+  "SeatMap::totalPrice": {
+    "tag": "strong",
+    "id": "seat-total-price",
+    "classes": [
+      "total-price-value"
+    ],
+    "text": "$72.00",
+    "attributes": {
+      "data-testid": "seat-total-price",
+      "aria-label": "Total Ticket Price"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [
+      "span:Total Price"
+    ],
+    "selector": "#seat-total-price",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_H5": {
+    "tag": "button",
+    "id": "seat-H5",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "H5",
+    "attributes": {
+      "data-testid": "seat-H5",
+      "type": "button",
+      "data-seat": "H5",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat H5 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-H5",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_H6": {
+    "tag": "button",
+    "id": "seat-H6",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "H6",
+    "attributes": {
+      "data-testid": "seat-H6",
+      "type": "button",
+      "data-seat": "H6",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat H6 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-H6",
+    "pageContext": "seats"
+  },
+  "Payment::paymentTotal": {
+    "tag": "strong",
+    "id": "payment-total-amount",
+    "classes": [
+      "payment-total-value"
+    ],
+    "text": "$28.00",
+    "attributes": {
+      "data-testid": "payment-total-amount",
+      "aria-label": "Payment Amount Due"
+    },
+    "parentPath": "body > main > section > div > aside > div",
+    "siblings": [
+      "span:Amount Due"
+    ],
+    "selector": "#payment-total-amount",
+    "pageContext": "payment"
+  },
+  "Confirmation::confirmationBanner": {
+    "tag": "div",
+    "id": "confirmation-banner",
+    "classes": [
+      "alert",
+      "alert-success",
+      "confirmation-banner"
+    ],
+    "text": "Booking Confirmed! Your e-tickets are ready.",
+    "attributes": {
+      "data-testid": "confirmation-banner",
+      "role": "status"
+    },
+    "parentPath": "body > main > section",
+    "siblings": [
+      "h1:Thank You for Booking",
+      "p:Present this booking reference",
+      "div:CB-MWMBAL1K-8968",
+      "div:MovieInterstellar Odyssey",
+      "div:TheatreCineMax IMAX Downtown",
+      "div:Showtime2026-11-20 14:30"
+    ],
+    "selector": "#confirmation-banner",
+    "pageContext": "confirmation"
+  },
+  "Confirmation::bookingReference": {
+    "tag": "div",
+    "id": "booking-reference",
+    "classes": [
+      "confirmation-ref"
+    ],
+    "text": "CB-MWMBAL1K-8968",
+    "attributes": {
+      "data-testid": "booking-reference",
+      "role": "status",
+      "aria-label": "Booking Reference"
+    },
+    "parentPath": "body > main > section",
+    "siblings": [
+      "div:Booking Confirmed! Your e-tick",
+      "h1:Thank You for Booking",
+      "p:Present this booking reference",
+      "div:MovieInterstellar Odyssey",
+      "div:TheatreCineMax IMAX Downtown",
+      "div:Showtime2026-11-20 14:30"
+    ],
+    "selector": "#booking-reference",
+    "pageContext": "confirmation"
+  },
+  "Confirmation::confirmationTotal": {
+    "tag": "strong",
+    "id": "confirmation-total",
+    "classes": [
+      "confirmation-total-value"
+    ],
+    "text": "$28.00",
+    "attributes": {
+      "data-testid": "confirmation-total",
+      "aria-label": "Confirmation Total Paid"
+    },
+    "parentPath": "body > main > section > div",
+    "siblings": [
+      "span:Total Paid"
+    ],
+    "selector": "#confirmation-total",
+    "pageContext": "confirmation"
+  },
+  "Confirmation::bookAnotherBtn": {
+    "tag": "button",
+    "id": "book-another-btn",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "book-another-btn"
+    ],
+    "text": "Book Another Movie",
+    "attributes": {
+      "data-testid": "book-another-btn",
+      "type": "button",
+      "aria-label": "Book Another Movie"
+    },
+    "parentPath": "body > main > section > div",
+    "siblings": [],
+    "selector": "#book-another-btn",
+    "pageContext": "confirmation"
+  },
+  "MovieList::viewDetailsBtn_3": {
+    "tag": "button",
+    "id": "view-movie-3",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "view-details-btn"
+    ],
+    "text": "View Details",
+    "attributes": {
+      "data-testid": "view-movie-3",
+      "type": "button",
+      "data-action": "view-details",
+      "data-movie-id": "3",
+      "aria-label": "View Details for Neon Drift"
+    },
+    "parentPath": "body > main > section > div > article > div",
+    "siblings": [
+      "h2:Neon Drift",
+      "p:119 min • Rated R",
+      "p:$15.00 / ticket"
+    ],
+    "selector": "#view-movie-3",
+    "pageContext": "movies"
+  },
+  "Showtime::showtimeBtn_ST-301": {
+    "tag": "button",
+    "id": "select-showtime-ST-301",
+    "classes": [
+      "btn",
+      "btn-primary",
+      "showtime-select-btn"
+    ],
+    "text": "Choose Seats",
+    "attributes": {
+      "data-testid": "select-showtime-ST-301",
+      "type": "button",
+      "data-showtime-id": "ST-301",
+      "data-sold-out": "false",
+      "aria-label": "Choose Seats for CineMax IMAX Downtown 16:45"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:CineMax IMAX Downtown\n        "
+    ],
+    "selector": "#select-showtime-ST-301",
+    "pageContext": "showtimes"
+  },
+  "SeatMap::seatGrid": {
+    "tag": "div",
+    "id": "seat-grid",
+    "classes": [
+      "seat-grid"
+    ],
+    "text": "A1\n        \n          A2\n        \n          A3\n        \n          A4\n        \n          A5\n        \n          A6\n       ",
+    "attributes": {
+      "data-testid": "seat-grid",
+      "role": "grid",
+      "aria-label": "10 by 10 Seat Map"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "div:CINEMA SCREEN",
+      "div:Available\n               Selec"
+    ],
+    "selector": "#seat-grid",
+    "pageContext": "seats"
+  },
+  "MovieDetails::synopsis": {
+    "tag": "p",
+    "id": "movie-details-synopsis",
+    "classes": [
+      "details-synopsis"
+    ],
+    "text": "A deep-space research crew crosses an unstable wormhole to locate a habitable world before Earth faces atmospheric colla",
+    "attributes": {
+      "data-testid": "movie-details-synopsis",
+      "aria-label": "Movie Synopsis"
+    },
+    "parentPath": "body > main > section > div > div",
+    "siblings": [
+      "span:Sci-Fi",
+      "h1:Interstellar Odyssey",
+      "p:148 min • Rated PG-13 • IMDb ★",
+      "div:DirectorElena Vance",
+      "div:CastMarcus Cole, Aria Lin, Dav"
+    ],
+    "selector": "#movie-details-synopsis",
+    "pageContext": "movie-details"
+  },
+  "SeatMap::seat_E1": {
+    "tag": "button",
+    "id": "seat-E1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "E1",
+    "attributes": {
+      "data-testid": "seat-E1",
+      "type": "button",
+      "data-seat": "E1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat E1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-E1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_E2": {
+    "tag": "button",
+    "id": "seat-E2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "E2",
+    "attributes": {
+      "data-testid": "seat-E2",
+      "type": "button",
+      "data-seat": "E2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat E2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-E2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G1": {
+    "tag": "button",
+    "id": "seat-G1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G1",
+    "attributes": {
+      "data-testid": "seat-G1",
+      "type": "button",
+      "data-seat": "G1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G2": {
+    "tag": "button",
+    "id": "seat-G2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G2",
+    "attributes": {
+      "data-testid": "seat-G2",
+      "type": "button",
+      "data-seat": "G2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G3": {
+    "tag": "button",
+    "id": "seat-G3",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G3",
+    "attributes": {
+      "data-testid": "seat-G3",
+      "type": "button",
+      "data-seat": "G3",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G3 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G3",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G4": {
+    "tag": "button",
+    "id": "seat-G4",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G4",
+    "attributes": {
+      "data-testid": "seat-G4",
+      "type": "button",
+      "data-seat": "G4",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G4 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G4",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G5": {
+    "tag": "button",
+    "id": "seat-G5",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G5",
+    "attributes": {
+      "data-testid": "seat-G5",
+      "type": "button",
+      "data-seat": "G5",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G5 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G5",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_G6": {
+    "tag": "button",
+    "id": "seat-G6",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "G6",
+    "attributes": {
+      "data-testid": "seat-G6",
+      "type": "button",
+      "data-seat": "G6",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat G6 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-G6",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I1": {
+    "tag": "button",
+    "id": "seat-I1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I1",
+    "attributes": {
+      "data-testid": "seat-I1",
+      "type": "button",
+      "data-seat": "I1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I2": {
+    "tag": "button",
+    "id": "seat-I2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I2",
+    "attributes": {
+      "data-testid": "seat-I2",
+      "type": "button",
+      "data-seat": "I2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I3": {
+    "tag": "button",
+    "id": "seat-I3",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I3",
+    "attributes": {
+      "data-testid": "seat-I3",
+      "type": "button",
+      "data-seat": "I3",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I3 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I3",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I4": {
+    "tag": "button",
+    "id": "seat-I4",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I4",
+    "attributes": {
+      "data-testid": "seat-I4",
+      "type": "button",
+      "data-seat": "I4",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I4 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I4",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I5": {
+    "tag": "button",
+    "id": "seat-I5",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I5",
+    "attributes": {
+      "data-testid": "seat-I5",
+      "type": "button",
+      "data-seat": "I5",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I5 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I5",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I6": {
+    "tag": "button",
+    "id": "seat-I6",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I6",
+    "attributes": {
+      "data-testid": "seat-I6",
+      "type": "button",
+      "data-seat": "I6",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I6 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I6",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_I7": {
+    "tag": "button",
+    "id": "seat-I7",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "I7",
+    "attributes": {
+      "data-testid": "seat-I7",
+      "type": "button",
+      "data-seat": "I7",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat I7 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-I7",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_F1": {
+    "tag": "button",
+    "id": "seat-F1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "F1",
+    "attributes": {
+      "data-testid": "seat-F1",
+      "type": "button",
+      "data-seat": "F1",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat F1 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-F1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_F2": {
+    "tag": "button",
+    "id": "seat-F2",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "F2",
+    "attributes": {
+      "data-testid": "seat-F2",
+      "type": "button",
+      "data-seat": "F2",
+      "data-status": "available",
+      "data-originally-booked": "false",
+      "aria-label": "Seat F2 available"
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-F2",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_A1": {
+    "tag": "button",
+    "id": "seat-A1",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "A1",
+    "attributes": {
+      "data-testid": "seat-A1",
+      "type": "button",
+      "data-seat": "A1",
+      "data-status": "booked",
+      "data-originally-booked": "true",
+      "aria-label": "Seat A1 booked",
+      "disabled": ""
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6",
+      "button:A7"
+    ],
+    "selector": "#seat-A1",
+    "pageContext": "seats"
+  },
+  "SeatMap::seat_B5": {
+    "tag": "button",
+    "id": "seat-B5",
+    "classes": [
+      "seat-btn"
+    ],
+    "text": "B5",
+    "attributes": {
+      "data-testid": "seat-B5",
+      "type": "button",
+      "data-seat": "B5",
+      "data-status": "booked",
+      "data-originally-booked": "true",
+      "aria-label": "Seat B5 booked",
+      "disabled": ""
+    },
+    "parentPath": "body > main > section > div > div > div",
+    "siblings": [
+      "button:A1",
+      "button:A2",
+      "button:A3",
+      "button:A4",
+      "button:A5",
+      "button:A6"
+    ],
+    "selector": "#seat-B5",
+    "pageContext": "seats"
+  }
+}

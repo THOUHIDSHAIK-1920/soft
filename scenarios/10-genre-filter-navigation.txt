@@ -1,0 +1,5 @@
+Scenario: Multi-Movie Genre Filtering and Navigation Roundtrip
+Module: MovieList
+Tags: @regression
+
+After signing in, the user selects the "Animation" genre filter to find "Skyward Chronicles", opens its Movie Details page to verify the $10.00 price, and navigates back to the movie catalog cleanly.

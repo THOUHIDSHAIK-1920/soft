@@ -1,0 +1,196 @@
+{
+  "generatedAt": "2026-11-18T16:06:22.709Z",
+  "runId": "run-1795017980576",
+  "mode": "locator-change+bugs",
+  "llmProvider": "mock",
+  "totalFailuresAnalyzed": 17,
+  "entries": [
+    {
+      "testId": "tests/generated/movielist.generated.spec.ts::[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "module": "MovieList",
+      "category": "app bug",
+      "rootCause": "Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).",
+      "suggestedFix": "Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-06",
+      "errorExcerpt": "Error: BUG-06: Movie search must filter results accurately"
+    },
+    {
+      "testId": "tests/generated/movielist.generated.spec.ts::[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "module": "MovieList",
+      "category": "app bug",
+      "rootCause": "Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).",
+      "suggestedFix": "Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-06",
+      "errorExcerpt": "Error: BUG-06: Genre filter must isolate matching movies"
+    },
+    {
+      "testId": "tests/generated/login.generated.spec.ts::[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "testTitle": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "module": "Login",
+      "category": "app bug",
+      "rootCause": "Authentication endpoint bypassed credential validation for invalid/empty login input (Injected Defect BUG-05: empty_login_bypass).",
+      "suggestedFix": "Reject missing or non-matching credentials in POST /api/auth/login with HTTP 400/401 and display login-error alert.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-05",
+      "errorExcerpt": "Error: BUG-05: Invalid credentials must show authentication error"
+    },
+    {
+      "testId": "tests/generated/confirmation.generated.spec.ts::[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "module": "Confirmation",
+      "category": "app bug",
+      "rootCause": "Booking confirmation page omitted the confirmation banner and CB-* reservation reference ID (Injected Defect BUG-04: missing_confirmation).",
+      "suggestedFix": "Return generated bookingRef from POST /api/bookings and always render confirmationBanner & bookingRef in renderConfirmation().",
+      "confidence": 0.97,
+      "linkedBugId": "BUG-04",
+      "errorExcerpt": "Error: BUG-04: Booking confirmation banner must be visible"
+    },
+    {
+      "testId": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).",
+      "suggestedFix": "Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.",
+      "confidence": 0.98,
+      "linkedBugId": "BUG-02",
+      "errorExcerpt": "Error: BUG-02: Total price must equal ticket count x unit price"
+    },
+    {
+      "testId": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Pre-booked seat button remained interactive and allowed selection instead of staying disabled (Injected Defect BUG-01: booked_seat_selectable).",
+      "suggestedFix": "Set disabled attribute on booked seats and reject clicks on originallyBooked seats in renderSeatMap().",
+      "confidence": 0.97,
+      "linkedBugId": "BUG-01",
+      "errorExcerpt": "Error: BUG-01: Pre-booked seat must be disabled"
+    },
+    {
+      "testId": "tests/generated/payment.generated.spec.ts::[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "module": "Payment",
+      "category": "app bug",
+      "rootCause": "Payment API accepted malformed card number (\"1234\" / \"9999\") and CVV without returning validation error (Injected Defect BUG-07: invalid_card_accepted).",
+      "suggestedFix": "Enforce 16-digit PAN, MM/YY expiry, and 3-digit CVV regex validation in POST /api/bookings.",
+      "confidence": 0.97,
+      "linkedBugId": "BUG-07",
+      "errorExcerpt": "Error: BUG-07: Invalid card details must trigger payment validation error"
+    },
+    {
+      "testId": "tests/manual/booking-e2e.manual.spec.ts::Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "module": "Confirmation",
+      "category": "app bug",
+      "rootCause": "Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).",
+      "suggestedFix": "Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.",
+      "confidence": 0.98,
+      "linkedBugId": "BUG-02",
+      "errorExcerpt": "Error: BUG-02: Seat map total must be $28.00"
+    },
+    {
+      "testId": "tests/generated/showtime.generated.spec.ts::[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "module": "Showtime",
+      "category": "app bug",
+      "rootCause": "Sold-out showtime ST-103 button was rendered enabled instead of disabled (Injected Defect BUG-08: showtime_soldout_selectable).",
+      "suggestedFix": "Enforce disabled attribute and server-side guard on showtimes where sold_out === 1 in sut/public/app.js.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-08",
+      "errorExcerpt": "Error: BUG-08: Sold-out showtime must be disabled"
+    },
+    {
+      "testId": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Calculated ticket total includes an erroneous +$15.00 phantom surcharge (Injected Defect BUG-02: wrong_total_price).",
+      "suggestedFix": "Fix computeTotal() in sut/public/app.js and /api/bookings in sut/server.js to multiply selectedSeats.length * ticketPrice without extra fee.",
+      "confidence": 0.98,
+      "linkedBugId": "BUG-02",
+      "errorExcerpt": "Error: BUG-02: Boundary 6-seat total price must match 6 x $12.00"
+    },
+    {
+      "testId": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Seat map failed to enforce the 6-seat maximum booking constraint and permitted selecting a 7th seat (Injected Defect BUG-03: no_seat_limit_validation).",
+      "suggestedFix": "Restore selectedSeats.length >= 6 check in seat click handler and POST /api/bookings validation.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-03",
+      "errorExcerpt": "Error: BUG-03: Selecting a 7th seat must trigger max 6 seat error"
+    },
+    {
+      "testId": "tests/manual/bug-detection.manual.spec.ts::Manual: Search filters movies by title [BUG-06] @regression",
+      "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+      "module": "MovieList",
+      "category": "app bug",
+      "rootCause": "Movie catalog API ignored search query / genre filter and returned all 6 movies unfiltered (Injected Defect BUG-06: broken_movie_search).",
+      "suggestedFix": "Apply case-insensitive title and genre filtering in GET /api/movies inside sut/server.js.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-06",
+      "errorExcerpt": "Error: BUG-06: Search should return 1 movie"
+    },
+    {
+      "testId": "tests/manual/bug-detection.manual.spec.ts::Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "module": "Showtime",
+      "category": "app bug",
+      "rootCause": "Sold-out showtime ST-103 button was rendered enabled instead of disabled (Injected Defect BUG-08: showtime_soldout_selectable).",
+      "suggestedFix": "Enforce disabled attribute and server-side guard on showtimes where sold_out === 1 in sut/public/app.js.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-08",
+      "errorExcerpt": "Error: BUG-08: Sold-out showtime ST-103 must be disabled"
+    },
+    {
+      "testId": "tests/manual/bug-detection.manual.spec.ts::Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Seat map failed to enforce the 6-seat maximum booking constraint and permitted selecting a 7th seat (Injected Defect BUG-03: no_seat_limit_validation).",
+      "suggestedFix": "Restore selectedSeats.length >= 6 check in seat click handler and POST /api/bookings validation.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-03",
+      "errorExcerpt": "Error: BUG-03: Max 6 seats validation alert must appear"
+    },
+    {
+      "testId": "tests/manual/bug-detection.manual.spec.ts::Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "module": "Payment",
+      "category": "app bug",
+      "rootCause": "Payment API accepted malformed card number (\"1234\" / \"9999\") and CVV without returning validation error (Injected Defect BUG-07: invalid_card_accepted).",
+      "suggestedFix": "Enforce 16-digit PAN, MM/YY expiry, and 3-digit CVV regex validation in POST /api/bookings.",
+      "confidence": 0.97,
+      "linkedBugId": "BUG-07",
+      "errorExcerpt": "Error: BUG-07: Invalid card must show payment error"
+    },
+    {
+      "testId": "tests/manual/login.manual.spec.ts::Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "testTitle": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "module": "Login",
+      "category": "app bug",
+      "rootCause": "Authentication endpoint bypassed credential validation for invalid/empty login input (Injected Defect BUG-05: empty_login_bypass).",
+      "suggestedFix": "Reject missing or non-matching credentials in POST /api/auth/login with HTTP 400/401 and display login-error alert.",
+      "confidence": 0.96,
+      "linkedBugId": "BUG-05",
+      "errorExcerpt": "Error: BUG-05: Empty login must be rejected with error banner"
+    },
+    {
+      "testId": "tests/manual/seat-map-visual.manual.spec.ts::Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "module": "SeatMap",
+      "category": "app bug",
+      "rootCause": "Pre-booked seat button remained interactive and allowed selection instead of staying disabled (Injected Defect BUG-01: booked_seat_selectable).",
+      "suggestedFix": "Set disabled attribute on booked seats and reject clicks on originallyBooked seats in renderSeatMap().",
+      "confidence": 0.97,
+      "linkedBugId": "BUG-01",
+      "errorExcerpt": "Error: BUG-01: Pre-booked seat A1 must be disabled"
+    }
+  ]
+}

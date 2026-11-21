@@ -1,0 +1,3386 @@
+{
+  "runId": "run-1795017980576",
+  "timestamp": "2026-11-18T16:06:20.576Z",
+  "mode": "locator-change+bugs",
+  "locatorChange": true,
+  "bugInjection": true,
+  "totalDurationMs": 81317,
+  "summary": {
+    "total": 21,
+    "passed": 4,
+    "failed": 17,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "tests/generated/login.generated.spec.ts::[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+      "title": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+      "file": "tests/generated/login.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Login",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 4505,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:00.503Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.415Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.419Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:01.459Z",
+          "testTitle": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:02.356Z",
+          "testTitle": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:03.267Z",
+          "testTitle": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:04.325Z",
+          "testTitle": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "movieCard",
+          "oldLocator": ".movie-card",
+          "newLocator": "article.film-tile-v2",
+          "score": 0.9543,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ]
+    },
+    {
+      "id": "tests/generated/moviedetails.generated.spec.ts::[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+      "title": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+      "file": "tests/generated/moviedetails.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieDetails",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 6812,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:00.534Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.434Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.435Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:04.369Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:06.748Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:01.459Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:02.356Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:03.260Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:04.315Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:05.225Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "titleHeading",
+          "oldLocator": "#movie-details-title",
+          "newLocator": "#film-overview-heading-v2",
+          "score": 0.9475,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:05.973Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "synopsis",
+          "oldLocator": "#movie-details-synopsis",
+          "newLocator": "#film-plot-summary-v2",
+          "score": 0.9669,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:06.702Z",
+          "testTitle": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        }
+      ]
+    },
+    {
+      "id": "tests/generated/movielist.generated.spec.ts::[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "title": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "file": "tests/generated/movielist.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieList",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 5344,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-06: Movie search must filter results accurately\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6",
+      "stack": "Error: BUG-06: Movie search must filter results accurately\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\movielist.generated.spec.ts:26:74",
+      "screenshotPath": "test-results/generated-movielist.genera-08ee3-arch-query-smoke-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-movielist.genera-08ee3-arch-query-smoke-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:04.733Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:07.070Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:07.084Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?q=Quantum&bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:08.620Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"movies\",\"heading\":\"Now Showing\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"input#catalog-query-box-v2\",\"select#catalog-category-select-v2\",\"button#catalog-search-trigger-v2\",\"div#catalog-cards-container-v2\",\"button#inspect-film-1-v2\",\"button#inspect-film-2-v2\",\"button#inspect-film-3-v2\",\"button#inspect-film-4-v2\",\"button#inspect-film-5-v2\",\"button#inspect-film-6-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:05.498Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:06.243Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:07.000Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:07.836Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "searchInput",
+          "oldLocator": "#search-movies-input",
+          "newLocator": "#catalog-query-box-v2",
+          "score": 0.94,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:08.566Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "searchButton",
+          "oldLocator": "#search-movies-btn",
+          "newLocator": "#catalog-search-trigger-v2",
+          "score": 0.9134,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:09.640Z",
+          "testTitle": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "movieCard",
+          "oldLocator": ".movie-card",
+          "newLocator": "article.film-tile-v2",
+          "score": 0.9543,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ],
+      "detectedBugId": "BUG-06"
+    },
+    {
+      "id": "tests/generated/movielist.generated.spec.ts::[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "title": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "file": "tests/generated/movielist.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieList",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 4687,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-06: Genre filter must isolate matching movies\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6",
+      "stack": "Error: BUG-06: Genre filter must isolate matching movies\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\movielist.generated.spec.ts:47:72",
+      "screenshotPath": "test-results/generated-movielist.genera-b5c0d-tails-navigation-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-movielist.genera-b5c0d-tails-navigation-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:07.156Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:09.425Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:09.446Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?genre=Animation&bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:10.379Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"movies\",\"heading\":\"Now Showing\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"input#catalog-query-box-v2\",\"select#catalog-category-select-v2\",\"button#catalog-search-trigger-v2\",\"div#catalog-cards-container-v2\",\"button#inspect-film-1-v2\",\"button#inspect-film-2-v2\",\"button#inspect-film-3-v2\",\"button#inspect-film-4-v2\",\"button#inspect-film-5-v2\",\"button#inspect-film-6-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:07.913Z",
+          "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:08.636Z",
+          "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:09.363Z",
+          "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:10.286Z",
+          "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+          "pageName": "MovieList",
+          "logicalName": "genreSelect",
+          "oldLocator": "#genre-filter-select",
+          "newLocator": "#catalog-category-select-v2",
+          "score": 0.9535,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:11.376Z",
+          "testTitle": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+          "pageName": "MovieList",
+          "logicalName": "movieCard",
+          "oldLocator": ".movie-card",
+          "newLocator": "article.film-tile-v2",
+          "score": 0.9543,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ],
+      "detectedBugId": "BUG-06"
+    },
+    {
+      "id": "tests/generated/login.generated.spec.ts::[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "title": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "file": "tests/generated/login.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Login",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 12041,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-05: Invalid credentials must show authentication error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#login-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-05: Invalid credentials must show authentication error locator('#login-error').first() with timeout 8000ms\n  - waiting for locator('#login-error').first()\n",
+      "stack": "Error: BUG-05: Invalid credentials must show authentication error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#login-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-05: Invalid credentials must show authentication error locator('#login-error').first() with timeout 8000ms\n  - waiting for locator('#login-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\login.generated.spec.ts:47:93",
+      "screenshotPath": "test-results/generated-login.generated--4c530-th-error-message-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-login.generated--4c530-th-error-message-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:00.639Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.302Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.319Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"movies\",\"heading\":\"Now Showing\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"input#catalog-query-box-v2\",\"select#catalog-category-select-v2\",\"button#catalog-search-trigger-v2\",\"div#catalog-cards-container-v2\",\"button#inspect-film-1-v2\",\"button#inspect-film-2-v2\",\"button#inspect-film-3-v2\",\"button#inspect-film-4-v2\",\"button#inspect-film-5-v2\",\"button#inspect-film-6-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:01.465Z",
+          "testTitle": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:02.355Z",
+          "testTitle": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:03.199Z",
+          "testTitle": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-05"
+    },
+    {
+      "id": "tests/generated/confirmation.generated.spec.ts::[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "title": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "file": "tests/generated/confirmation.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Confirmation",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 21666,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-04: Booking confirmation banner must be visible\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#confirmation-banner').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-04: Booking confirmation banner must be visible locator('#confirmation-banner').first() with timeout 8000ms\n  - waiting for locator('#confirmation-banner').first()\n",
+      "stack": "Error: BUG-04: Booking confirmation banner must be visible\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#confirmation-banner').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-04: Booking confirmation banner must be visible locator('#confirmation-banner').first() with timeout 8000ms\n  - waiting for locator('#confirmation-banner').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\confirmation.generated.spec.ts:31:81",
+      "screenshotPath": "test-results/generated-confirmation.gen-4c6bc--and-total-smoke-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-confirmation.gen-4c6bc--and-total-smoke-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:00.451Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.433Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:03.438Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:04.408Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:05.307Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:06.117Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:12.527Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"confirmation\",\"heading\":\"Booking Processed\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"strong#receipt-paid-amount-v2\",\"button#new-reservation-cta-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:01.464Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:02.359Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:03.267Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:04.326Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:05.245Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:06.074Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:06.956Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_F1",
+          "oldLocator": "#seat-F1",
+          "newLocator": "#grid-cell-F1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:07.834Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_F2",
+          "oldLocator": "#seat-F2",
+          "newLocator": "#grid-cell-F2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:08.667Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "proceedToPaymentBtn",
+          "oldLocator": "#proceed-to-payment-btn",
+          "newLocator": "#checkout-continue-action-v2",
+          "score": 0.8805,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:09.465Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Payment",
+          "logicalName": "cardHolderInput",
+          "oldLocator": "#card-holder-input",
+          "newLocator": "#billing-name-field-v2",
+          "score": 0.9002,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:10.183Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Payment",
+          "logicalName": "cardNumberInput",
+          "oldLocator": "#card-number-input",
+          "newLocator": "#billing-pan-field-v2",
+          "score": 0.9246,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:10.932Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Payment",
+          "logicalName": "cardExpiryInput",
+          "oldLocator": "#card-expiry-input",
+          "newLocator": "#billing-exp-field-v2",
+          "score": 0.9198,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:11.679Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Payment",
+          "logicalName": "cardCvvInput",
+          "oldLocator": "#card-cvv-input",
+          "newLocator": "#billing-cvc-field-v2",
+          "score": 0.8998,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:12.465Z",
+          "testTitle": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+          "pageName": "Payment",
+          "logicalName": "payNowBtn",
+          "oldLocator": "#pay-now-btn",
+          "newLocator": "#complete-purchase-cta-v2",
+          "score": 0.8015,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-04"
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "title": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 14370,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-02: Total price must equal ticket count x unit price\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$28.00\"\nReceived: \"$43.00\"",
+      "stack": "Error: BUG-02: Total price must equal ticket count x unit price\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$28.00\"\nReceived: \"$43.00\"\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\seatmap.generated.spec.ts:36:84",
+      "screenshotPath": "test-results/generated-seatmap.generate-2ab82-otal-price-smoke-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-seatmap.generate-2ab82-otal-price-smoke-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:12.863Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:15.336Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:15.344Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:16.300Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:17.141Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:18.065Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:13.733Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:14.506Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:15.279Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:16.237Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:17.071Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:18.000Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:18.962Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "availableCount",
+          "oldLocator": "#count-available",
+          "newLocator": "#stat-open-seats-v2",
+          "score": 0.7169,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:19.798Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "selectedCount",
+          "oldLocator": "#count-selected",
+          "newLocator": "#stat-chosen-seats-v2",
+          "score": 0.7726,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:20.611Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "bookedCount",
+          "oldLocator": "#count-booked",
+          "newLocator": "#stat-reserved-seats-v2",
+          "score": 0.918,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:21.422Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "allSeats",
+          "oldLocator": ".seat-btn",
+          "newLocator": "#grid-cell-A1-v2",
+          "score": 0.9163,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:22.235Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_C1",
+          "oldLocator": "#seat-C1",
+          "newLocator": "#grid-cell-C1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:23.038Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_C2",
+          "oldLocator": "#seat-C2",
+          "newLocator": "#grid-cell-C2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:26.719Z",
+          "testTitle": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "totalPrice",
+          "oldLocator": "#seat-total-price",
+          "newLocator": "#order-subtotal-amount-v2",
+          "score": 0.7256,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        }
+      ],
+      "detectedBugId": "BUG-02"
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "title": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 14814,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-01: Pre-booked seat must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#grid-cell-A1-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-01: Pre-booked seat must be disabled locator('#grid-cell-A1-v2').first() with timeout 8000ms\n  - waiting for locator('#grid-cell-A1-v2').first()\n    19 × locator resolved to <button type=\"button\" data-seat=\"A1\" id=\"grid-cell-A1-v2\" data-status=\"booked\" class=\"auditorium-cell-v2\" aria-label=\"Seat A1 booked\" data-testid=\"grid-cell-A1-v2\" data-originally-booked=\"true\">A1</button>\n       - unexpected value \"enabled\"\n",
+      "stack": "Error: BUG-01: Pre-booked seat must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#grid-cell-A1-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-01: Pre-booked seat must be disabled locator('#grid-cell-A1-v2').first() with timeout 8000ms\n  - waiting for locator('#grid-cell-A1-v2').first()\n    19 × locator resolved to <button type=\"button\" data-seat=\"A1\" id=\"grid-cell-A1-v2\" data-status=\"booked\" class=\"auditorium-cell-v2\" aria-label=\"Seat A1 booked\" data-testid=\"grid-cell-A1-v2\" data-originally-booked=\"true\">A1</button>\n       - unexpected value \"enabled\"\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\seatmap.generated.spec.ts:57:74",
+      "screenshotPath": "test-results/generated-seatmap.generate-69219-e-10x10-seat-map-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-seatmap.generate-69219-e-10x10-seat-map-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:13.748Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:16.176Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:16.192Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:17.149Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:18.058Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:18.927Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:14.629Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:15.361Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:16.098Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:17.086Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:17.999Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:18.869Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:19.788Z",
+          "testTitle": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_A1",
+          "oldLocator": "#seat-A1",
+          "newLocator": "#grid-cell-A1-v2",
+          "score": 0.9163,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-01"
+    },
+    {
+      "id": "tests/generated/payment.generated.spec.ts::[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "title": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "file": "tests/generated/payment.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Payment",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 20797,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-07: Invalid card details must trigger payment validation error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#payment-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-07: Invalid card details must trigger payment validation error locator('#payment-error').first() with timeout 8000ms\n  - waiting for locator('#payment-error').first()\n",
+      "stack": "Error: BUG-07: Invalid card details must trigger payment validation error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#payment-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-07: Invalid card details must trigger payment validation error locator('#payment-error').first() with timeout 8000ms\n  - waiting for locator('#payment-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\payment.generated.spec.ts:37:100",
+      "screenshotPath": "test-results/generated-payment.generate-3c029-payment-checkout-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-payment.generate-3c029-payment-checkout-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:11.442Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:13.773Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:13.779Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:14.682Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:15.504Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:16.333Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:22.894Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"confirmation\",\"heading\":\"Booking Processed\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"strong#receipt-paid-amount-v2\",\"button#new-reservation-cta-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:12.230Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:12.944Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:13.716Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:14.618Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:15.458Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:16.279Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:17.228Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_E1",
+          "oldLocator": "#seat-E1",
+          "newLocator": "#grid-cell-E1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:18.154Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_E2",
+          "oldLocator": "#seat-E2",
+          "newLocator": "#grid-cell-E2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:19.016Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "SeatMap",
+          "logicalName": "proceedToPaymentBtn",
+          "oldLocator": "#proceed-to-payment-btn",
+          "newLocator": "#checkout-continue-action-v2",
+          "score": 0.8805,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:19.790Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Payment",
+          "logicalName": "cardHolderInput",
+          "oldLocator": "#card-holder-input",
+          "newLocator": "#billing-name-field-v2",
+          "score": 0.9002,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:20.541Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Payment",
+          "logicalName": "cardNumberInput",
+          "oldLocator": "#card-number-input",
+          "newLocator": "#billing-pan-field-v2",
+          "score": 0.9246,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:21.299Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Payment",
+          "logicalName": "cardExpiryInput",
+          "oldLocator": "#card-expiry-input",
+          "newLocator": "#billing-exp-field-v2",
+          "score": 0.9198,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:22.063Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Payment",
+          "logicalName": "cardCvvInput",
+          "oldLocator": "#card-cvv-input",
+          "newLocator": "#billing-cvc-field-v2",
+          "score": 0.8998,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:22.794Z",
+          "testTitle": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+          "pageName": "Payment",
+          "logicalName": "payNowBtn",
+          "oldLocator": "#pay-now-btn",
+          "newLocator": "#complete-purchase-cta-v2",
+          "score": 0.8015,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-07"
+    },
+    {
+      "id": "tests/manual/booking-e2e.manual.spec.ts::Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "title": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "file": "tests/manual/booking-e2e.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Confirmation",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 8849,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-02: Seat map total must be $28.00\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$28.00\"\nReceived: \"$43.00\"",
+      "stack": "Error: BUG-02: Seat map total must be $28.00\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$28.00\"\nReceived: \"$43.00\"\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\booking-e2e.manual.spec.ts:25:92",
+      "screenshotPath": "test-results/manual-booking-e2e.manual--04b86--02-BUG-04-smoke-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-booking-e2e.manual--04b86--02-BUG-04-smoke-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:33.365Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:35.800Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:35.807Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:36.670Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:38.268Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:39.116Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:34.233Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:34.968Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:35.738Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:36.618Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:37.460Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "titleHeading",
+          "oldLocator": "#movie-details-title",
+          "newLocator": "#film-overview-heading-v2",
+          "score": 0.9475,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:38.214Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:39.026Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:40.087Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_H5",
+          "oldLocator": "#seat-H5",
+          "newLocator": "#grid-cell-H5-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:40.898Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_H6",
+          "oldLocator": "#seat-H6",
+          "newLocator": "#grid-cell-H6-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:41.681Z",
+          "testTitle": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "totalPrice",
+          "oldLocator": "#seat-total-price",
+          "newLocator": "#order-subtotal-amount-v2",
+          "score": 0.7256,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        }
+      ],
+      "detectedBugId": "BUG-02"
+    },
+    {
+      "id": "tests/generated/showtime.generated.spec.ts::[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "title": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "file": "tests/generated/showtime.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Showtime",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 13417,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-08: Sold-out showtime must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#pick-screening-ST-103-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-08: Sold-out showtime must be disabled locator('#pick-screening-ST-103-v2').first() with timeout 8000ms\n  - waiting for locator('#pick-screening-ST-103-v2').first()\n    19 × locator resolved to <button type=\"button\" data-sold-out=\"true\" data-showtime-id=\"ST-103\" id=\"pick-screening-ST-103-v2\" data-testid=\"pick-screening-ST-103-v2\" class=\"btn btn-primary screening-select-v2\" aria-label=\"Sold Out for Grand Royale Cinema 21:15\">↵              Sold Out↵            </button>\n       - unexpected value \"enabled\"\n",
+      "stack": "Error: BUG-08: Sold-out showtime must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#pick-screening-ST-103-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-08: Sold-out showtime must be disabled locator('#pick-screening-ST-103-v2').first() with timeout 8000ms\n  - waiting for locator('#pick-screening-ST-103-v2').first()\n    19 × locator resolved to <button type=\"button\" data-sold-out=\"true\" data-showtime-id=\"ST-103\" id=\"pick-screening-ST-103-v2\" data-testid=\"pick-screening-ST-103-v2\" class=\"btn btn-primary screening-select-v2\" aria-label=\"Sold Out for Grand Royale Cinema 21:15\">↵              Sold Out↵            </button>\n       - unexpected value \"enabled\"\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\showtime.generated.spec.ts:27:76",
+      "screenshotPath": "test-results/generated-showtime.generat-3f4e0-eening-selection-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-showtime.generat-3f4e0-eening-selection-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:29.433Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:31.843Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:31.855Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:32.700Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:33.582Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"showtimes\",\"heading\":\"Select Showtime & Theatre\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"button#return-catalog-btn-v2\",\"div#screening-schedule-list-v2\",\"button#pick-screening-ST-101-v2\",\"button#pick-screening-ST-102-v2\",\"button#pick-screening-ST-103-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:30.238Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:30.980Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:31.739Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:32.625Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:33.517Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:34.325Z",
+          "testTitle": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-103",
+          "oldLocator": "#select-showtime-ST-103",
+          "newLocator": "#pick-screening-ST-103-v2",
+          "score": 0.9651,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ],
+      "detectedBugId": "BUG-08"
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "title": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 14583,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-02: Boundary 6-seat total price must match 6 x $12.00\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$72.00\"\nReceived: \"$87.00\"",
+      "stack": "Error: BUG-02: Boundary 6-seat total price must match 6 x $12.00\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: \"$72.00\"\nReceived: \"$87.00\"\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\seatmap.generated.spec.ts:107:80",
+      "screenshotPath": "test-results/generated-seatmap.generate-cf1ed-otal-calculation-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-seatmap.generate-cf1ed-otal-calculation-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:28.492Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:30.907Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:30.911Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:31.821Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:32.645Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:33.531Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:29.334Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:30.101Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:30.848Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:31.739Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_2",
+          "oldLocator": "#view-movie-2",
+          "newLocator": "#inspect-film-2-v2",
+          "score": 0.9564,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:32.591Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8614,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:33.470Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-201",
+          "oldLocator": "#select-showtime-ST-201",
+          "newLocator": "#pick-screening-ST-201-v2",
+          "score": 0.9619,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:34.349Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G1",
+          "oldLocator": "#seat-G1",
+          "newLocator": "#grid-cell-G1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:35.119Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G2",
+          "oldLocator": "#seat-G2",
+          "newLocator": "#grid-cell-G2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:35.942Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G3",
+          "oldLocator": "#seat-G3",
+          "newLocator": "#grid-cell-G3-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:36.771Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G4",
+          "oldLocator": "#seat-G4",
+          "newLocator": "#grid-cell-G4-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:37.582Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G5",
+          "oldLocator": "#seat-G5",
+          "newLocator": "#grid-cell-G5-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:38.372Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_G6",
+          "oldLocator": "#seat-G6",
+          "newLocator": "#grid-cell-G6-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:39.232Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "availableCount",
+          "oldLocator": "#count-available",
+          "newLocator": "#stat-open-seats-v2",
+          "score": 0.9174,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:40.101Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "selectedCount",
+          "oldLocator": "#count-selected",
+          "newLocator": "#stat-chosen-seats-v2",
+          "score": 0.9086,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:40.887Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "bookedCount",
+          "oldLocator": "#count-booked",
+          "newLocator": "#stat-reserved-seats-v2",
+          "score": 0.9195,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:41.672Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "allSeats",
+          "oldLocator": ".seat-btn",
+          "newLocator": "#grid-cell-A1-v2",
+          "score": 0.9163,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:42.456Z",
+          "testTitle": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+          "pageName": "SeatMap",
+          "logicalName": "totalPrice",
+          "oldLocator": "#seat-total-price",
+          "newLocator": "#order-subtotal-amount-v2",
+          "score": 0.7249,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-02"
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "title": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 20412,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-03: Selecting a 7th seat must trigger max 6 seat error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#seat-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-03: Selecting a 7th seat must trigger max 6 seat error locator('#seat-error').first() with timeout 8000ms\n  - waiting for locator('#seat-error').first()\n",
+      "stack": "Error: BUG-03: Selecting a 7th seat must trigger max 6 seat error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#seat-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-03: Selecting a 7th seat must trigger max 6 seat error locator('#seat-error').first() with timeout 8000ms\n  - waiting for locator('#seat-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\generated\\seatmap.generated.spec.ts:81:89",
+      "screenshotPath": "test-results/generated-seatmap.generate-94f66-elect-a-7th-seat-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/generated-seatmap.generate-94f66-elect-a-7th-seat-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:23.056Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:25.466Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:25.479Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:26.381Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:27.219Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:28.095Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:23.856Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:24.601Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:25.384Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:26.320Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:27.168Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:28.019Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:28.931Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_C1",
+          "oldLocator": "#seat-C1",
+          "newLocator": "#grid-cell-C1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:29.756Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_C2",
+          "oldLocator": "#seat-C2",
+          "newLocator": "#grid-cell-C2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:30.602Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_C3",
+          "oldLocator": "#seat-C3",
+          "newLocator": "#grid-cell-C3-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:31.476Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_D1",
+          "oldLocator": "#seat-D1",
+          "newLocator": "#grid-cell-D1-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:32.366Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_D2",
+          "oldLocator": "#seat-D2",
+          "newLocator": "#grid-cell-D2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:33.221Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_D3",
+          "oldLocator": "#seat-D3",
+          "newLocator": "#grid-cell-D3-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:34.102Z",
+          "testTitle": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_D4",
+          "oldLocator": "#seat-D4",
+          "newLocator": "#grid-cell-D4-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        }
+      ],
+      "detectedBugId": "BUG-03"
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Search filters movies by title [BUG-06] @regression",
+      "title": "Manual: Search filters movies by title [BUG-06] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "MovieList",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 6143,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-06: Search should return 1 movie\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6",
+      "stack": "Error: BUG-06: Search should return 1 movie\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 6\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\bug-detection.manual.spec.ts:10:89",
+      "screenshotPath": "test-results/manual-bug-detection.manua-9aac3--by-title-BUG-06-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-bug-detection.manua-9aac3--by-title-BUG-06-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:43.158Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:45.570Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:45.588Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?q=Interstellar&bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:47.477Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"movies\",\"heading\":\"Now Showing\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"input#catalog-query-box-v2\",\"select#catalog-category-select-v2\",\"button#catalog-search-trigger-v2\",\"div#catalog-cards-container-v2\",\"button#inspect-film-1-v2\",\"button#inspect-film-2-v2\",\"button#inspect-film-3-v2\",\"button#inspect-film-4-v2\",\"button#inspect-film-5-v2\",\"button#inspect-film-6-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:43.982Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:44.771Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:45.519Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:46.550Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "MovieList",
+          "logicalName": "searchInput",
+          "oldLocator": "#search-movies-input",
+          "newLocator": "#catalog-query-box-v2",
+          "score": 0.94,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 1
+        },
+        {
+          "timestamp": "2026-11-18T16:05:47.381Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "MovieList",
+          "logicalName": "searchButton",
+          "oldLocator": "#search-movies-btn",
+          "newLocator": "#catalog-search-trigger-v2",
+          "score": 0.9134,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:48.609Z",
+          "testTitle": "Manual: Search filters movies by title [BUG-06] @regression",
+          "pageName": "MovieList",
+          "logicalName": "movieCard",
+          "oldLocator": ".movie-card",
+          "newLocator": "article.film-tile-v2",
+          "score": 0.9543,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ],
+      "detectedBugId": "BUG-06"
+    },
+    {
+      "id": "tests/manual/login.manual.spec.ts::Manual: Valid user signs in and loads movie catalog @smoke @regression",
+      "title": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+      "file": "tests/manual/login.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Login",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 3802,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:50.423Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:52.859Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:52.871Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:51.263Z",
+          "testTitle": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:52.034Z",
+          "testTitle": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:52.797Z",
+          "testTitle": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:53.745Z",
+          "testTitle": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "movieCard",
+          "oldLocator": ".movie-card",
+          "newLocator": "article.film-tile-v2",
+          "score": 0.9543,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ]
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "title": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Showtime",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 13825,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-08: Sold-out showtime ST-103 must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#pick-screening-ST-103-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-08: Sold-out showtime ST-103 must be disabled locator('#pick-screening-ST-103-v2').first() with timeout 8000ms\n  - waiting for locator('#pick-screening-ST-103-v2').first()\n    19 × locator resolved to <button type=\"button\" data-sold-out=\"true\" data-showtime-id=\"ST-103\" id=\"pick-screening-ST-103-v2\" data-testid=\"pick-screening-ST-103-v2\" class=\"btn btn-primary screening-select-v2\" aria-label=\"Sold Out for Grand Royale Cinema 21:15\">↵              Sold Out↵            </button>\n       - unexpected value \"enabled\"\n",
+      "stack": "Error: BUG-08: Sold-out showtime ST-103 must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#pick-screening-ST-103-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-08: Sold-out showtime ST-103 must be disabled locator('#pick-screening-ST-103-v2').first() with timeout 8000ms\n  - waiting for locator('#pick-screening-ST-103-v2').first()\n    19 × locator resolved to <button type=\"button\" data-sold-out=\"true\" data-showtime-id=\"ST-103\" id=\"pick-screening-ST-103-v2\" data-testid=\"pick-screening-ST-103-v2\" class=\"btn btn-primary screening-select-v2\" aria-label=\"Sold Out for Grand Royale Cinema 21:15\">↵              Sold Out↵            </button>\n       - unexpected value \"enabled\"\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\bug-detection.manual.spec.ts:23:83",
+      "screenshotPath": "test-results/manual-bug-detection.manua-243f6--disabled-BUG-08-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-bug-detection.manua-243f6--disabled-BUG-08-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:44.032Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:46.586Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:46.598Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:47.569Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:48.472Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"showtimes\",\"heading\":\"Select Showtime & Theatre\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"button#return-catalog-btn-v2\",\"div#screening-schedule-list-v2\",\"button#pick-screening-ST-101-v2\",\"button#pick-screening-ST-102-v2\",\"button#pick-screening-ST-103-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:44.859Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:45.656Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:46.468Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:47.510Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:48.372Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:49.352Z",
+          "testTitle": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-103",
+          "oldLocator": "#select-showtime-ST-103",
+          "newLocator": "#pick-screening-ST-103-v2",
+          "score": 0.9651,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        }
+      ],
+      "detectedBugId": "BUG-08"
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "title": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 20653,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-03: Max 6 seats validation alert must appear\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#seat-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-03: Max 6 seats validation alert must appear locator('#seat-error').first() with timeout 8000ms\n  - waiting for locator('#seat-error').first()\n",
+      "stack": "Error: BUG-03: Max 6 seats validation alert must appear\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#seat-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-03: Max 6 seats validation alert must appear locator('#seat-error').first() with timeout 8000ms\n  - waiting for locator('#seat-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\bug-detection.manual.spec.ts:39:75",
+      "screenshotPath": "test-results/manual-bug-detection.manua-13fe9-ats-limit-BUG-03-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-bug-detection.manua-13fe9-ats-limit-BUG-03-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:44.207Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:46.703Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:46.709Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:47.606Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:48.451Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:49.426Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:45.068Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:45.821Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:46.627Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:47.543Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_2",
+          "oldLocator": "#view-movie-2",
+          "newLocator": "#inspect-film-2-v2",
+          "score": 0.9564,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:48.375Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8614,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:49.356Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-201",
+          "oldLocator": "#select-showtime-ST-201",
+          "newLocator": "#pick-screening-ST-201-v2",
+          "score": 0.9619,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:50.334Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I1",
+          "oldLocator": "#seat-I1",
+          "newLocator": "#grid-cell-I1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:51.156Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I2",
+          "oldLocator": "#seat-I2",
+          "newLocator": "#grid-cell-I2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:52.059Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I3",
+          "oldLocator": "#seat-I3",
+          "newLocator": "#grid-cell-I3-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:53.014Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I4",
+          "oldLocator": "#seat-I4",
+          "newLocator": "#grid-cell-I4-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:53.886Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I5",
+          "oldLocator": "#seat-I5",
+          "newLocator": "#grid-cell-I5-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:54.724Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I6",
+          "oldLocator": "#seat-I6",
+          "newLocator": "#grid-cell-I6-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        },
+        {
+          "timestamp": "2026-11-18T16:05:55.550Z",
+          "testTitle": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_I7",
+          "oldLocator": "#seat-I7",
+          "newLocator": "#grid-cell-I7-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 5
+        }
+      ],
+      "detectedBugId": "BUG-03"
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "title": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Payment",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 20555,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-07: Invalid card must show payment error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#payment-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-07: Invalid card must show payment error locator('#payment-error').first() with timeout 8000ms\n  - waiting for locator('#payment-error').first()\n",
+      "stack": "Error: BUG-07: Invalid card must show payment error\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#payment-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-07: Invalid card must show payment error locator('#payment-error').first() with timeout 8000ms\n  - waiting for locator('#payment-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\bug-detection.manual.spec.ts:66:71",
+      "screenshotPath": "test-results/manual-bug-detection.manua-e6fb4-rd-number-BUG-07-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-bug-detection.manua-e6fb4-rd-number-BUG-07-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:44.842Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:47.477Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:47.492Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:48.467Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:49.440Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:50.299Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:56.032Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"confirmation\",\"heading\":\"Booking Processed\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"strong#receipt-paid-amount-v2\",\"button#new-reservation-cta-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:45.733Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:46.549Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:47.369Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:48.370Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_2",
+          "oldLocator": "#view-movie-2",
+          "newLocator": "#inspect-film-2-v2",
+          "score": 0.9564,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:49.356Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8614,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:50.235Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-201",
+          "oldLocator": "#select-showtime-ST-201",
+          "newLocator": "#pick-screening-ST-201-v2",
+          "score": 0.9619,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:51.143Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_J5",
+          "oldLocator": "#seat-J5",
+          "newLocator": "#grid-cell-J5-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:05:52.060Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "proceedToPaymentBtn",
+          "oldLocator": "#proceed-to-payment-btn",
+          "newLocator": "#checkout-continue-action-v2",
+          "score": 0.8805,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:52.967Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Payment",
+          "logicalName": "cardHolderInput",
+          "oldLocator": "#card-holder-input",
+          "newLocator": "#billing-name-field-v2",
+          "score": 0.9002,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:53.724Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Payment",
+          "logicalName": "cardNumberInput",
+          "oldLocator": "#card-number-input",
+          "newLocator": "#billing-pan-field-v2",
+          "score": 0.9246,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:54.466Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Payment",
+          "logicalName": "cardExpiryInput",
+          "oldLocator": "#card-expiry-input",
+          "newLocator": "#billing-exp-field-v2",
+          "score": 0.9198,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:55.207Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Payment",
+          "logicalName": "cardCvvInput",
+          "oldLocator": "#card-cvv-input",
+          "newLocator": "#billing-cvc-field-v2",
+          "score": 0.8998,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:05:55.948Z",
+          "testTitle": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+          "pageName": "Payment",
+          "logicalName": "payNowBtn",
+          "oldLocator": "#pay-now-btn",
+          "newLocator": "#complete-purchase-cta-v2",
+          "score": 0.8008,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-07"
+    },
+    {
+      "id": "tests/manual/login.manual.spec.ts::Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "title": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "file": "tests/manual/login.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Login",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 11494,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-05: Empty login must be rejected with error banner\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#login-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-05: Empty login must be rejected with error banner locator('#login-error').first() with timeout 8000ms\n  - waiting for locator('#login-error').first()\n",
+      "stack": "Error: BUG-05: Empty login must be rejected with error banner\n\nexpect(locator).toBeVisible() failed\n\nLocator: locator('#login-error').first()\nExpected: visible\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n  - BUG-05: Empty login must be rejected with error banner locator('#login-error').first() with timeout 8000ms\n  - waiting for locator('#login-error').first()\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\login.manual.spec.ts:20:81",
+      "screenshotPath": "test-results/manual-login.manual-Manual-cd809-r-message-BUG-05-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-login.manual-Manual-cd809-r-message-BUG-05-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:54.145Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:56.472Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:56.502Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"movies\",\"heading\":\"Now Showing\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"input#catalog-query-box-v2\",\"select#catalog-category-select-v2\",\"button#catalog-search-trigger-v2\",\"div#catalog-cards-container-v2\",\"button#inspect-film-1-v2\",\"button#inspect-film-2-v2\",\"button#inspect-film-3-v2\",\"button#inspect-film-4-v2\",\"button#inspect-film-5-v2\",\"button#inspect-film-6-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:54.917Z",
+          "testTitle": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:05:55.661Z",
+          "testTitle": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:05:56.417Z",
+          "testTitle": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-05"
+    },
+    {
+      "id": "tests/manual/seat-map-visual.manual.spec.ts::Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+      "title": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+      "file": "tests/manual/seat-map-visual.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 12603,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:05:58.830Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:01.211Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:01.219Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/3",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:02.079Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/3/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:02.912Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-301/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:03.698Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:05:59.660Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:00.411Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:01.161Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:02.034Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_3",
+          "oldLocator": "#view-movie-3",
+          "newLocator": "#inspect-film-3-v2",
+          "score": 0.9551,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:06:02.845Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8614,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:03.654Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-301",
+          "oldLocator": "#select-showtime-ST-301",
+          "newLocator": "#pick-screening-ST-301-v2",
+          "score": 0.962,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:04.510Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seatGrid",
+          "oldLocator": "#seat-grid",
+          "newLocator": "#auditorium-matrix-v2",
+          "score": 0.9557,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:06:05.421Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "availableCount",
+          "oldLocator": "#count-available",
+          "newLocator": "#stat-open-seats-v2",
+          "score": 0.7169,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:06:06.202Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "selectedCount",
+          "oldLocator": "#count-selected",
+          "newLocator": "#stat-chosen-seats-v2",
+          "score": 0.7726,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:06:06.976Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "bookedCount",
+          "oldLocator": "#count-booked",
+          "newLocator": "#stat-reserved-seats-v2",
+          "score": 0.9195,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:07.790Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "allSeats",
+          "oldLocator": ".seat-btn",
+          "newLocator": "#grid-cell-A1-v2",
+          "score": 0.9163,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:09.387Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_J1",
+          "oldLocator": "#seat-J1",
+          "newLocator": "#grid-cell-J1-v2",
+          "score": 0.931,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        },
+        {
+          "timestamp": "2026-11-18T16:06:10.248Z",
+          "testTitle": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_J2",
+          "oldLocator": "#seat-J2",
+          "newLocator": "#grid-cell-J2-v2",
+          "score": 0.9311,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 4
+        }
+      ]
+    },
+    {
+      "id": "tests/manual/seat-map-visual.manual.spec.ts::Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "title": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "file": "tests/manual/seat-map-visual.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "failed",
+      "durationMs": 14381,
+      "retries": 0,
+      "flaky": false,
+      "error": "Error: BUG-01: Pre-booked seat A1 must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#grid-cell-A1-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-01: Pre-booked seat A1 must be disabled locator('#grid-cell-A1-v2').first() with timeout 8000ms\n  - waiting for locator('#grid-cell-A1-v2').first()\n    19 × locator resolved to <button type=\"button\" data-seat=\"A1\" id=\"grid-cell-A1-v2\" data-status=\"booked\" class=\"auditorium-cell-v2\" aria-label=\"Seat A1 booked\" data-testid=\"grid-cell-A1-v2\" data-originally-booked=\"true\">A1</button>\n       - unexpected value \"enabled\"\n",
+      "stack": "Error: BUG-01: Pre-booked seat A1 must be disabled\n\nexpect(locator).toBeDisabled() failed\n\nLocator:  locator('#grid-cell-A1-v2').first()\nExpected: disabled\nReceived: enabled\nTimeout:  8000ms\n\nCall log:\n  - BUG-01: Pre-booked seat A1 must be disabled locator('#grid-cell-A1-v2').first() with timeout 8000ms\n  - waiting for locator('#grid-cell-A1-v2').first()\n    19 × locator resolved to <button type=\"button\" data-seat=\"A1\" id=\"grid-cell-A1-v2\" data-status=\"booked\" class=\"auditorium-cell-v2\" aria-label=\"Seat A1 booked\" data-testid=\"grid-cell-A1-v2\" data-originally-booked=\"true\">A1</button>\n       - unexpected value \"enabled\"\n\n    at c:\\smilewell\\movie-ticket-ai-testing\\tests\\manual\\seat-map-visual.manual.spec.ts:58:77",
+      "screenshotPath": "test-results/manual-seat-map-visual.man-c628f--seat-map-BUG-01-regression-chromium/test-failed-1.png",
+      "tracePath": "test-results/manual-seat-map-visual.man-c628f--seat-map-BUG-01-regression-chromium/trace.zip",
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:06.110Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:08.548Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=true",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:08.560Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:09.417Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:10.249Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:06:11.053Z"
+        }
+      ],
+      "domDiff": "{\"activePage\":\"seats\",\"heading\":\"Select Your Seats (10×10 Auditorium)\",\"alerts\":[],\"visibleIds\":[\"div#brand-logo\",\"span#mode-badges\",\"span#user-greeting\",\"button#nav-movies-btn\",\"button#nav-logout-btn\",\"main#app-root\",\"div#auditorium-matrix-v2\",\"button#grid-cell-A1-v2\",\"button#grid-cell-A2-v2\",\"button#grid-cell-A3-v2\",\"button#grid-cell-A4-v2\",\"button#grid-cell-A5-v2\",\"button#grid-cell-A6-v2\",\"button#grid-cell-A7-v2\",\"button#grid-cell-A8-v2\",\"button#grid-cell-A9-v2\",\"button#grid-cell-A10-v2\",\"button#grid-cell-B1-v2\",\"button#grid-cell-B2-v2\",\"button#grid-cell-B3-v2\",\"button#grid-cell-B4-v2\",\"button#grid-cell-B5-v2\",\"button#grid-cell-B6-v2\",\"button#grid-cell-B7-v2\",\"button#grid-cell-B8-v2\"]}",
+      "healingEvents": [
+        {
+          "timestamp": "2026-11-18T16:06:06.969Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "Login",
+          "logicalName": "emailInput",
+          "oldLocator": "#login-email",
+          "newLocator": "#auth-email-field-v2",
+          "score": 0.8983,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:07.726Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "Login",
+          "logicalName": "passwordInput",
+          "oldLocator": "#login-password",
+          "newLocator": "#auth-secret-field-v2",
+          "score": 0.8989,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:08.483Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "Login",
+          "logicalName": "submitButton",
+          "oldLocator": "#login-submit",
+          "newLocator": "#signin-primary-cta-v2",
+          "score": 0.9108,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        },
+        {
+          "timestamp": "2026-11-18T16:06:09.383Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "MovieList",
+          "logicalName": "viewDetailsBtn_1",
+          "oldLocator": "#view-movie-1",
+          "newLocator": "#inspect-film-1-v2",
+          "score": 0.9558,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:10.196Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "MovieDetails",
+          "logicalName": "selectShowtimeBtn",
+          "oldLocator": "#select-showtime-btn",
+          "newLocator": "#choose-screening-cta-v2",
+          "score": 0.8613,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 3
+        },
+        {
+          "timestamp": "2026-11-18T16:06:11.000Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "Showtime",
+          "logicalName": "showtimeBtn_ST-101",
+          "oldLocator": "#select-showtime-ST-101",
+          "newLocator": "#pick-screening-ST-101-v2",
+          "score": 0.9643,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 2
+        },
+        {
+          "timestamp": "2026-11-18T16:06:11.871Z",
+          "testTitle": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+          "pageName": "SeatMap",
+          "logicalName": "seat_A1",
+          "oldLocator": "#seat-A1",
+          "newLocator": "#grid-cell-A1-v2",
+          "score": 0.9163,
+          "success": true,
+          "method": "tfidf-cosine+agglomerative",
+          "clusterId": 0
+        }
+      ],
+      "detectedBugId": "BUG-01"
+    }
+  ]
+}

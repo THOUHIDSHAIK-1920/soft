@@ -1,0 +1,6 @@
+Scenario: Interactive Seat Map Selection and Price Calculation
+Module: SeatMap
+Tags: @smoke @regression
+
+On the 10x10 Seat Map for Interstellar Odyssey (ST-101, $14.00 per ticket), 86 seats are available and 14 seats are pre-booked.
+When the user selects two available seats (C1 and C2), the selected count updates to 2, available count updates to 84, and the total price accurately calculates to $28.00.

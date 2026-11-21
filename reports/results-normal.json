@@ -1,0 +1,1114 @@
+{
+  "runId": "run-1795017878873",
+  "timestamp": "2026-11-18T16:04:38.873Z",
+  "mode": "normal",
+  "locatorChange": false,
+  "bugInjection": false,
+  "totalDurationMs": 11549,
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "tests/generated/login.generated.spec.ts::[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "title": "[TC-GEN-002] Reject invalid or empty login credentials with error message @regression",
+      "file": "tests/generated/login.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Login",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1065,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+          "timestamp": "2026-11-18T16:04:29.105Z"
+        }
+      ],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.556Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 401,
+          "timestamp": "2026-11-18T16:04:29.104Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/login.generated.spec.ts::[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+      "title": "[TC-GEN-001] Successful login with valid registered credentials @smoke @regression",
+      "file": "tests/generated/login.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Login",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1098,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.539Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.004Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.013Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/moviedetails.generated.spec.ts::[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+      "title": "[TC-GEN-004] Inspect movie details metadata and proceed to showtime selection @smoke @regression",
+      "file": "tests/generated/moviedetails.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieDetails",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1538,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.396Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.908Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.931Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.130Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.424Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/movielist.generated.spec.ts::[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "title": "[TC-GEN-003] Filter movie catalog accurately using search query @smoke @regression",
+      "file": "tests/generated/movielist.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieList",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1484,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.526Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.914Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.929Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?q=Quantum&bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.202Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/confirmation.generated.spec.ts::[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "title": "[TC-GEN-010] End-to-end movie ticket booking displays confirmation reference and total @smoke @regression",
+      "file": "tests/generated/confirmation.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Confirmation",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2787,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.346Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.910Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:28.932Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.133Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.272Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.419Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.411Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/movielist.generated.spec.ts::[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "title": "[TC-GEN-012] Filter movies by Animation genre and roundtrip movie details navigation @regression",
+      "file": "tests/generated/movielist.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "MovieList",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1683,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.586Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.955Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.967Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?genre=Animation&bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.148Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/6",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.697Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?genre=Animation&bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.920Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/payment.generated.spec.ts::[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "title": "[TC-GEN-009] Reject invalid credit card number and CVV on payment checkout @regression",
+      "file": "tests/generated/payment.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Payment",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2363,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+          "timestamp": "2026-11-18T16:04:31.788Z"
+        }
+      ],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:29.812Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.202Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.210Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.417Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.656Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:30.788Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 400,
+          "timestamp": "2026-11-18T16:04:31.788Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "title": "[TC-GEN-007] Prevent selection of pre-booked seats on the 10x10 seat map @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1411,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.069Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.491Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.508Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.699Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.851Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.026Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "title": "[TC-GEN-006] Select two available seats and verify dynamic counts and total price @smoke @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2481,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.030Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.443Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.456Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.639Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.822Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.968Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/showtime.generated.spec.ts::[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "title": "[TC-GEN-005] Disable sold-out showtime while allowing available screening selection @regression",
+      "file": "tests/generated/showtime.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "Showtime",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1485,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.541Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.029Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.047Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.262Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.419Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.620Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "title": "[TC-GEN-008] Enforce maximum 6 seats limit when attempting to select a 7th seat @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2900,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.298Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.697Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.711Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:31.904Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.088Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.258Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/generated/seatmap.generated.spec.ts::[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "title": "[TC-GEN-011] Boundary test allowing exactly 6 seats with accurate total calculation @regression",
+      "file": "tests/generated/seatmap.generated.spec.ts",
+      "suiteType": "generated",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2725,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.271Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.710Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.722Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:32.993Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.236Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.392Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "title": "Manual: Sold-out showtime is disabled [BUG-08] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Showtime",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1054,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.178Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.548Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.555Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.705Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.847Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Search filters movies by title [BUG-06] @regression",
+      "title": "Manual: Search filters movies by title [BUG-06] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "MovieList",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1273,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.009Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.422Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.432Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?q=Interstellar&bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.670Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/login.manual.spec.ts::Manual: Valid user signs in and loads movie catalog @smoke @regression",
+      "title": "Manual: Valid user signs in and loads movie catalog @smoke @regression",
+      "file": "tests/manual/login.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Login",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 985,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.355Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.853Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.866Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/booking-e2e.manual.spec.ts::Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "title": "Manual: Full E2E booking workflow from login to confirmation [BUG-02][BUG-04] @smoke @regression",
+      "file": "tests/manual/booking-e2e.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Confirmation",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2951,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.542Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.889Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:33.903Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.069Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.338Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:34.467Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.635Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.050Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/login.manual.spec.ts::Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "title": "Manual: Empty and invalid credentials show error message [BUG-05] @regression",
+      "file": "tests/manual/login.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Login",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 688,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+          "timestamp": "2026-11-18T16:04:36.657Z"
+        }
+      ],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.295Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 400,
+          "timestamp": "2026-11-18T16:04:36.657Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "title": "Manual: Payment rejects invalid credit card number [BUG-07] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "Payment",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2077,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)",
+          "timestamp": "2026-11-18T16:04:36.971Z"
+        }
+      ],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.262Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.717Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.760Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.951Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.067Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.182Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/bookings",
+          "status": 400,
+          "timestamp": "2026-11-18T16:04:36.969Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/bug-detection.manual.spec.ts::Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "title": "Manual: Seat selection enforces maximum 6 seats limit [BUG-03] @regression",
+      "file": "tests/manual/bug-detection.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2672,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.007Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.423Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.434Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.637Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/2/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:35.885Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-201/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.001Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/seat-map-visual.manual.spec.ts::Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "title": "Manual: Booked seats cannot be selected on 10x10 seat map [BUG-01] @regression",
+      "file": "tests/manual/seat-map-visual.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 1536,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.064Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.513Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.546Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.729Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/1/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.887Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-101/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:38.024Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    },
+    {
+      "id": "tests/manual/seat-map-visual.manual.spec.ts::Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+      "title": "Manual: 10x10 seat map visual screenshot comparison and initial DOM counts @smoke @regression",
+      "file": "tests/manual/seat-map-visual.manual.spec.ts",
+      "suiteType": "manual",
+      "module": "SeatMap",
+      "tags": [
+        "@smoke",
+        "@regression"
+      ],
+      "status": "passed",
+      "durationMs": 2335,
+      "retries": 0,
+      "flaky": false,
+      "consoleLogs": [],
+      "networkLogs": [
+        {
+          "method": "GET",
+          "url": "/api/config",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.539Z"
+        },
+        {
+          "method": "POST",
+          "url": "/api/auth/login",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.925Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies?bugs=false",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:36.940Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/3",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.138Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/movies/3/showtimes",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.276Z"
+        },
+        {
+          "method": "GET",
+          "url": "/api/showtimes/ST-301/seats",
+          "status": 200,
+          "timestamp": "2026-11-18T16:04:37.473Z"
+        }
+      ],
+      "domDiff": "",
+      "healingEvents": []
+    }
+  ]
+}

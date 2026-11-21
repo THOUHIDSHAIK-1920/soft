@@ -1,0 +1,6 @@
+Scenario: Movie Catalog Browsing and Search Filtering
+Module: MovieList
+Tags: @smoke @regression
+
+After logging in as alice@cinebook.com, the user views the Now Showing movie catalog displaying 6 movies.
+When the user searches for "Quantum" in the search box and clicks Search, the movie list should filter down to only matching movies ("Quantum Horizon").

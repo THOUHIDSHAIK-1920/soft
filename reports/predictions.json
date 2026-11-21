@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-11-18T16:06:23.441Z",
+  "modelAccuracy": 0.9178,
+  "trainingSamples": 48,
+  "predictions": [
+    {
+      "module": "Login",
+      "bugProbability": 0.9667,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 2,
+        "healing_count": 63,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "MovieList",
+      "bugProbability": 0.95,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 3,
+        "healing_count": 24,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "Showtime",
+      "bugProbability": 0.95,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 2,
+        "healing_count": 13,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "SeatMap",
+      "bugProbability": 0.95,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 6,
+        "healing_count": 52,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "Payment",
+      "bugProbability": 0.925,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 2,
+        "healing_count": 15,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "Confirmation",
+      "bugProbability": 0.7725,
+      "riskLevel": "HIGH",
+      "predictedBugProne": true,
+      "features": {
+        "failure_count": 2,
+        "healing_count": 0,
+        "flakiness": 0
+      }
+    },
+    {
+      "module": "MovieDetails",
+      "bugProbability": 0.1267,
+      "riskLevel": "LOW",
+      "predictedBugProne": false,
+      "features": {
+        "failure_count": 0,
+        "healing_count": 17,
+        "flakiness": 0
+      }
+    }
+  ]
+}

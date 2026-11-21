@@ -1,0 +1,5 @@
+Scenario: Payment Checkout Validation with Invalid Card Rejection
+Module: Payment
+Tags: @regression
+
+After selecting available seats (E1, E2) and proceeding to Mock Payment Checkout, submitting an invalid short card number ("1234") and invalid CVV ("9") must be rejected with a payment validation error message and must not advance to booking confirmation.

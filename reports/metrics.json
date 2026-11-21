@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-11-18T16:06:23.442Z",
+  "testGenerationAccuracy": 1,
+  "defectDetectionRate": 1,
+  "defectsFound": 8,
+  "defectsInjected": 8,
+  "detectedBugIds": [
+    "BUG-01",
+    "BUG-02",
+    "BUG-03",
+    "BUG-04",
+    "BUG-05",
+    "BUG-06",
+    "BUG-07",
+    "BUG-08"
+  ],
+  "automationCoverage": 1,
+  "executionTimeAutomatedMs": 11549,
+  "executionTimeManualBaselineMs": 945000,
+  "speedupFactor": 81.83,
+  "bugPredictionAccuracy": 0.9178,
+  "bookingWorkflowPassRate": 1,
+  "locatorHealingSuccessRate": 1,
+  "healingAttempts": 184,
+  "healingSuccesses": 184
+}
